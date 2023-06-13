@@ -1,0 +1,1554 @@
+ 
+      ############################## 
+      ##                          ##
+      ##  Force Field Definition  ##
+      ##                          ##
+      ##############################
+ 
+##
+## Ligand Field Molecular Mechanics Force Field parameters for Cu Type-I centers
+## See Rob Deeth web pages for information:
+## www2.warwick.ac.uk/fac/sci/chemistry/research/deeth/deethgroup/research/lfmm/
+## 
+ 
+ 
+forcefield                 AMBER94LF 
+bondunit                   1.0d0 
+angleunit                  3.04617419786709d-4 
+strbndunit                 1.74532925199433d-2 
+opbendunit                 3.04617419786709d-4 
+torsionunit                1.0d0 
+vdwtype                    LENNARD-JONES
+radiusrule                 ARITHMETIC 
+radiustype                 R-MIN 
+radiussize                 RADIUS 
+epsilonrule                GEOMETRIC 
+vdw-12-scale               0.0d0 
+vdw-13-scale               0.0d0 
+vdw-14-scale               0.5d0 
+vdw-15-scale               1.0d0 
+gamma-halgren              0.0d0
+delta-halgren              0.0d0
+chg-12-scale               0.0d0
+chg-13-scale               0.0d0
+chg-14-scale               0.833333333333333d0 
+dielectric                 1.0d0 
+electric                   332.058722966186d0 
+ 
+ 
+      #############################
+      ##                         ##
+      ##  Atom Type Definitions  ##
+      ##                         ##
+      #############################
+ 
+ 
+#        type class label  comment                          Z    mass    lig 
+atom        1   14  N     "N_Glycine N"                     7  14.010000    3
+atom        2    1  CT    "CT_Glycine CA"                   6  12.010000    4
+atom        3    2  C     "C_Glycine C"                     6  12.010000    3
+atom        4   29  H     "H_Glycine HN"                    1  1.008000    1
+atom        5   24  O     "O_Glycine O"                     8  16.000000    1
+atom        6   35  H1    "H1_Glycine HA"                   1  1.008000    1
+atom        7   14  N     "N_Alanine N"                     7  14.010000    3
+atom        8    1  CT    "CT_Alanine CA"                   6  12.010000    4
+atom        9    2  C     "C_Alanine C"                     6  12.010000    3
+atom       10   29  H     "H_Alanine HN"                    1  1.008000    1
+atom       11   24  O     "O_Alanine O"                     8  16.000000    1
+atom       12   35  H1    "H1_Alanine HA"                   1  1.008000    1
+atom       13    1  CT    "CT_Alanine CB"                   6  12.010000    4
+atom       14   34  HC    "HC_Alanine HB"                   1  1.008000    1
+atom       15   14  N     "N_Valine N"                      7  14.010000    3
+atom       16    1  CT    "CT_Valine CA"                    6  12.010000    4
+atom       17    2  C     "C_Valine C"                      6  12.010000    3
+atom       18   29  H     "H_Valine HN"                     1  1.008000    1
+atom       19   24  O     "O_Valine O"                      8  16.000000    1
+atom       20   35  H1    "H1_Valine HA"                    1  1.008000    1
+atom       21    1  CT    "CT_Valine CB"                    6  12.010000    4
+atom       22   34  HC    "HC_Valine HB"                    1  1.008000    1
+atom       23    1  CT    "CT_Valine CG1"                   6  12.010000    4
+atom       24   34  HC    "HC_Valine HG1"                   1  1.008000    1
+atom       25    1  CT    "CT_Valine CG2"                   6  12.010000    4
+atom       26   34  HC    "HC_Valine HG2"                   1  1.008000    1
+atom       27   14  N     "N_Leucine N"                     7  14.010000    3
+atom       28    1  CT    "CT_Leucine CA"                   6  12.010000    4
+atom       29    2  C     "C_Leucine C"                     6  12.010000    3
+atom       30   29  H     "H_Leucine HN"                    1  1.008000    1
+atom       31   24  O     "O_Leucine O"                     8  16.000000    1
+atom       32   35  H1    "H1_Leucine HA"                   1  1.008000    1
+atom       33    1  CT    "CT_Leucine CB"                   6  12.010000    4
+atom       34   34  HC    "HC_Leucine HB"                   1  1.008000    1
+atom       35    1  CT    "CT_Leucine CG"                   6  12.010000    4
+atom       36   34  HC    "HC_Leucine HG"                   1  1.008000    1
+atom       37    1  CT    "CT_Leucine CD1"                  6  12.010000    4
+atom       38   34  HC    "HC_Leucine HD1"                  1  1.008000    1
+atom       39    1  CT    "CT_Leucine CD2"                  6  12.010000    4
+atom       40   34  HC    "HC_Leucine HD2"                  1  1.008000    1
+atom       41   14  N     "N_Isoleucine N"                  7  14.010000    3
+atom       42    1  CT    "CT_Isoleucine CA"                6  12.010000    4
+atom       43    2  C     "C_Isoleucine C"                  6  12.010000    3
+atom       44   29  H     "H_Isoleucine HN"                 1  1.008000    1
+atom       45   24  O     "O_Isoleucine O"                  8  16.000000    1
+atom       46   35  H1    "H1_Isoleucine HA"                1  1.008000    1
+atom       47    1  CT    "CT_Isoleucine CB"                6  12.010000    4
+atom       48   34  HC    "HC_Isoleucine HB"                1  1.008000    1
+atom       49    1  CT    "CT_Isoleucine CG1"               6  12.010000    4
+atom       50   34  HC    "HC_Isoleucine HG1"               1  1.008000    1
+atom       51    1  CT    "CT_Isoleucine CG2"               6  12.010000    4
+atom       52   34  HC    "HC_Isoleucine HG2"               1  1.008000    1
+atom       53    1  CT    "CT_Isoleucine CD"                6  12.010000    4
+atom       54   34  HC    "HC_Isoleucine HD"                1  1.008000    1
+atom       55   14  N     "N_Serine N"                      7  14.010000    3
+atom       56    1  CT    "CT_Serine CA"                    6  12.010000    4
+atom       57    2  C     "C_Serine C"                      6  12.010000    3
+atom       58   29  H     "H_Serine HN"                     1  1.008000    1
+atom       59   24  O     "O_Serine O"                      8  16.000000    1
+atom       60   35  H1    "H1_Serine HA"                    1  1.008000    1
+atom       61    1  CT    "CT_Serine CB"                    6  12.010000    4
+atom       62   35  H1    "H1_Serine HB"                    1  1.008000    1
+atom       63   22  OH    "OH_Serine OG"                    8  16.000000    2
+atom       64   31  HO    "HO_Serine HG"                    1  1.008000    1
+atom       65   14  N     "N_Threonine N"                   7  14.010000    3
+atom       66    1  CT    "CT_Threonine CA"                 6  12.010000    4
+atom       67    2  C     "C_Threonine C"                   6  12.010000    3
+atom       68   29  H     "H_Threonine HN"                  1  1.008000    1
+atom       69   24  O     "O_Threonine O"                   8  16.000000    1
+atom       70   35  H1    "H1_Threonine HA"                 1  1.008000    1
+atom       71    1  CT    "CT_Threonine CB"                 6  12.010000    4
+atom       72   35  H1    "H1_Threonine HB"                 1  1.008000    1
+atom       73   22  OH    "OH_Threonine OG1"                8  16.000000    2
+atom       74   31  HO    "HO_Threonine HG1"                1  1.008000    1
+atom       75    1  CT    "CT_Threonine CG2"                6  12.010000    4
+atom       76   34  HC    "HC_Threonine HG2"                1  1.008000    1
+atom       77   14  N     "N_Cysteine (-SH) N"              7  14.010000    3
+atom       78    1  CT    "CT_Cysteine (-SH) CA"            6  12.010000    4
+atom       79    2  C     "C_Cysteine (-SH) C"              6  12.010000    3
+atom       80   29  H     "H_Cysteine (-SH) HN"             1  1.008000    1
+atom       81   24  O     "O_Cysteine (-SH) O"              8  16.000000    1
+atom       82   35  H1    "H1_Cysteine (-SH) HA"            1  1.008000    1
+atom       83    1  CT    "CT_Cysteine (-SH) CB"            6  12.010000    4
+atom       84   35  H1    "H1_Cysteine (-SH) HB"            1  1.008000    1
+atom       85   27  SH    "SH_Cysteine (-SH) SG"           16  32.060000    2
+atom       86   32  HS    "HS_Cysteine (-SH) HG"            1  1.008000    1
+atom       87   14  N     "N_Cystine (-SS-) N"              7  14.010000    3
+atom       88    1  CT    "CT_Cystine (-SS-) CA"            6  12.010000    4
+atom       89    2  C     "C_Cystine (-SS-) C"              6  12.010000    3
+atom       90   29  H     "H_Cystine (-SS-) HN"             1  1.008000    1
+atom       91   24  O     "O_Cystine (-SS-) O"              8  16.000000    1
+atom       92   35  H1    "H1_Cystine (-SS-) HA"            1  1.008000    1
+atom       93    1  CT    "CT_Cystine (-SS-) CB"            6  12.010000    4
+atom       94   35  H1    "H1_Cystine (-SS-) HB"            1  1.008000    1
+atom       95   26  S     "S_Cystine (-SS-) SG"            16  32.060000    2
+atom       96   14  N     "N_Proline N"                     7  14.010000    3
+atom       97    1  CT    "CT_Proline CA"                   6  12.010000    4
+atom       98    2  C     "C_Proline C"                     6  12.010000    3
+atom       99   24  O     "O_Proline O"                     8  16.000000    1
+atom      100   35  H1    "H1_Proline HA"                   1  1.008000    1
+atom      101    1  CT    "CT_Proline CB"                   6  12.010000    4
+atom      102   34  HC    "HC_Proline HB"                   1  1.008000    1
+atom      103    1  CT    "CT_Proline CG"                   6  12.010000    4
+atom      104   34  HC    "HC_Proline HG"                   1  1.008000    1
+atom      105    1  CT    "CT_Proline CD"                   6  12.010000    4
+atom      106   35  H1    "H1_Proline HD"                   1  1.008000    1
+atom      107   14  N     "N_Phenylalanine N"               7  14.010000    3
+atom      108    1  CT    "CT_Phenylalanine CA"             6  12.010000    4
+atom      109    2  C     "C_Phenylalanine C"               6  12.010000    3
+atom      110   29  H     "H_Phenylalanine HN"              1  1.008000    1
+atom      111   24  O     "O_Phenylalanine O"               8  16.000000    1
+atom      112   35  H1    "H1_Phenylalanine HA"             1  1.008000    1
+atom      113    1  CT    "CT_Phenylalanine CB"             6  12.010000    4
+atom      114   34  HC    "HC_Phenylalanine HB"             1  1.008000    1
+atom      115    3  CA    "CA_Phenylalanine CG"             6  12.010000    3
+atom      116    3  CA    "CA_Phenylalanine CD"             6  12.010000    3
+atom      117   33  HA    "HA_Phenylalanine HD"             1  1.008000    1
+atom      118    3  CA    "CA_Phenylalanine CE"             6  12.010000    3
+atom      119   33  HA    "HA_Phenylalanine HE"             1  1.008000    1
+atom      120    3  CA    "CA_Phenylalanine CZ"             6  12.010000    3
+atom      121   33  HA    "HA_Phenylalanine HZ"             1  1.008000    1
+atom      122   14  N     "N_Tyrosine N"                    7  14.010000    3
+atom      123    1  CT    "CT_Tyrosine CA"                  6  12.010000    4
+atom      124    2  C     "C_Tyrosine C"                    6  12.010000    3
+atom      125   29  H     "H_Tyrosine HN"                   1  1.008000    1
+atom      126   24  O     "O_Tyrosine O"                    8  16.000000    1
+atom      127   35  H1    "H1_Tyrosine HA"                  1  1.008000    1
+atom      128    1  CT    "CT_Tyrosine CB"                  6  12.010000    4
+atom      129   34  HC    "HC_Tyrosine HB"                  1  1.008000    1
+atom      130    3  CA    "CA_Tyrosine CG"                  6  12.010000    3
+atom      131    3  CA    "CA_Tyrosine CD"                  6  12.010000    3
+atom      132   33  HA    "HA_Tyrosine HD"                  1  1.008000    1
+atom      133    3  CA    "CA_Tyrosine CE"                  6  12.010000    3
+atom      134   33  HA    "HA_Tyrosine HE"                  1  1.008000    1
+atom      135    2  C     "C_Tyrosine CZ"                   6  12.010000    3
+atom      136   22  OH    "OH_Tyrosine OH"                  8  16.000000    2
+atom      137   31  HO    "HO_Tyrosine HH"                  1  1.008000    1
+atom      138   14  N     "N_Tryptophan N"                  7  14.010000    3
+atom      139    1  CT    "CT_Tryptophan CA"                6  12.010000    4
+atom      140    2  C     "C_Tryptophan C"                  6  12.010000    3
+atom      141   29  H     "H_Tryptophan HN"                 1  1.008000    1
+atom      142   24  O     "O_Tryptophan O"                  8  16.000000    1
+atom      143   35  H1    "H1_Tryptophan HA"                1  1.008000    1
+atom      144    1  CT    "CT_Tryptophan CB"                6  12.010000    4
+atom      145   34  HC    "HC_Tryptophan HB"                1  1.008000    1
+atom      146   10  C*    "C*_Tryptophan CG"                6  12.010000    3
+atom      147    7  CW    "CW_Tryptophan CD1"               6  12.010000    3
+atom      148   39  H4    "H4_Tryptophan HD1"               1  1.008000    1
+atom      149    9  CB    "CB_Tryptophan CD2"               6  12.010000    3
+atom      150   15  NA    "NA_Tryptophan NE1"               7  14.010000    3
+atom      151   29  H     "H_Tryptophan HE1"                1  1.008000    1
+atom      152   11  CN    "CN_Tryptophan CE2"               6  12.010000    3
+atom      153    3  CA    "CA_Tryptophan CE3"               6  12.010000    3
+atom      154   33  HA    "HA_Tryptophan HE3"               1  1.008000    1
+atom      155    3  CA    "CA_Tryptophan CZ2"               6  12.010000    3
+atom      156   33  HA    "HA_Tryptophan HZ2"               1  1.008000    1
+atom      157    3  CA    "CA_Tryptophan CZ3"               6  12.010000    3
+atom      158   33  HA    "HA_Tryptophan HZ3"               1  1.008000    1
+atom      159    3  CA    "CA_Tryptophan CH2"               6  12.010000    3
+atom      160   33  HA    "HA_Tryptophan HH2"               1  1.008000    1
+atom      161   14  N     "N_Histidine (+) N"               7  14.010000    3
+atom      162    1  CT    "CT_Histidine (+) CA"             6  12.010000    4
+atom      163    2  C     "C_Histidine (+) C"               6  12.010000    3
+atom      164   29  H     "H_Histidine (+) HN"              1  1.008000    1
+atom      165   24  O     "O_Histidine (+) O"               8  16.000000    1
+atom      166   35  H1    "H1_Histidine (+) HA"             1  1.008000    1
+atom      167    1  CT    "CT_Histidine (+) CB"             6  12.010000    4
+atom      168   34  HC    "HC_Histidine (+) HB"             1  1.008000    1
+atom      169    5  CC    "CC_Histidine (+) CG"             6  12.010000    3
+atom      170   15  NA    "NA_Histidine (+) ND1"            7  14.010000    3
+atom      171   29  H     "H_Histidine (+) HD1"             1  1.008000    1
+atom      172    7  CW    "CW_Histidine (+) CD2"            6  12.010000    3
+atom      173   39  H4    "H4_Histidine (+) HD2"            1  1.008000    1
+atom      174    8  CR    "CR_Histidine (+) CE1"            6  12.010000    3
+atom      175   40  H5    "H5_Histidine (+) HE1"            1  1.008000    1
+atom      176   15  NA    "NA_Histidine (+) NE2"            7  14.010000    3
+atom      177   29  H     "H_Histidine (+) HE2"             1  1.008000    1
+atom      178   14  N     "N_Histidine (HD) N"              7  14.010000    3
+atom      179    1  CT    "CT_Histidine (HD) CA"            6  12.010000    4
+atom      180    2  C     "C_Histidine (HD) C"              6  12.010000    3
+atom      181   29  H     "H_Histidine (HD) HN"             1  1.008000    1
+atom      182   24  O     "O_Histidine (HD) O"              8  16.000000    1
+atom      183   35  H1    "H1_Histidine (HD) HA"            1  1.008000    1
+atom      184    1  CT    "CT_Histidine (HD) CB"            6  12.010000    4
+atom      185   34  HC    "HC_Histidine (HD) HB"            1  1.008000    1
+atom      186    5  CC    "CC_Histidine (HD) CG"            6  12.010000    3
+atom      187   15  NA    "NA_Histidine (HD) ND1"           7  14.010000    3
+atom      188   29  H     "H_Histidine (HD) HD1"            1  1.008000    1
+atom      189    6  CV    "CV_Histidine (HD) CD2"           6  12.010000    3
+atom      190   39  H4    "H4_Histidine (HD) HD2"           1  1.008000    1
+atom      191    8  CR    "CR_Histidine (HD) CE1"           6  12.010000    3
+atom      192   40  H5    "H5_Histidine (HD) HE1"           1  1.008000    1
+atom      193   16  NB    "NB_Histidine (HD) NE2"           7  14.010000    2
+atom      194   14  N     "N_Histidine (HE) N"              7  14.010000    3
+atom      195    1  CT    "CT_Histidine (HE) CA"            6  12.010000    4
+atom      196    2  C     "C_Histidine (HE) C"              6  12.010000    3
+atom      197   29  H     "H_Histidine (HE) HN"             1  1.008000    1
+atom      198   24  O     "O_Histidine (HE) O"              8  16.000000    1
+atom      199   35  H1    "H1_Histidine (HE) HA"            1  1.008000    1
+atom      200    1  CT    "CT_Histidine (HE) CB"            6  12.010000    4
+atom      201   34  HC    "HC_Histidine (HE) HB"            1  1.008000    1
+atom      202    5  CC    "CC_Histidine (HE) CG"            6  12.010000    3
+atom      203   16  NB    "NB_Histidine (HE) ND1"           7  14.010000    2
+atom      204    7  CW    "CW_Histidine (HE) CD2"           6  12.010000    3
+atom      205   39  H4    "H4_Histidine (HE) HD2"           1  1.008000    1
+atom      206    8  CR    "CR_Histidine (HE) CE1"           6  12.010000    3
+atom      207   40  H5    "H5_Histidine (HE) HE1"           1  1.008000    1
+atom      208   15  NA    "NA_Histidine (HE) NE2"           7  14.010000    3
+atom      209   29  H     "H_Histidine (HE) HE2"            1  1.008000    1
+atom      210   14  N     "N_Aspartic Acid N"               7  14.010000    3
+atom      211    1  CT    "CT_Aspartic Acid CA"             6  12.010000    4
+atom      212    2  C     "C_Aspartic Acid C"               6  12.010000    3
+atom      213   29  H     "H_Aspartic Acid HN"              1  1.008000    1
+atom      214   24  O     "O_Aspartic Acid O"               8  16.000000    1
+atom      215   35  H1    "H1_Aspartic Acid HA"             1  1.008000    1
+atom      216    1  CT    "CT_Aspartic Acid CB"             6  12.010000    4
+atom      217   34  HC    "HC_Aspartic Acid HB"             1  1.008000    1
+atom      218    2  C     "C_Aspartic Acid CG"              6  12.010000    3
+atom      219   25  O2    "O2_Aspartic Acid OD"             8  16.000000    1
+atom      220   14  N     "N_Asparagine N"                  7  14.010000    3
+atom      221    1  CT    "CT_Asparagine CA"                6  12.010000    4
+atom      222    2  C     "C_Asparagine C"                  6  12.010000    3
+atom      223   29  H     "H_Asparagine HN"                 1  1.008000    1
+atom      224   24  O     "O_Asparagine O"                  8  16.000000    1
+atom      225   35  H1    "H1_Asparagine HA"                1  1.008000    1
+atom      226    1  CT    "CT_Asparagine CB"                6  12.010000    4
+atom      227   34  HC    "HC_Asparagine HB"                1  1.008000    1
+atom      228    2  C     "C_Asparagine CG"                 6  12.010000    3
+atom      229   24  O     "O_Asparagine OD1"                8  16.000000    1
+atom      230   14  N     "N_Asparagine ND2"                7  14.010000    3
+atom      231   29  H     "H_Asparagine HD2"                1  1.008000    1
+atom      232   14  N     "N_Glutamic Acid N"               7  14.010000    3
+atom      233    1  CT    "CT_Glutamic Acid CA"             6  12.010000    4
+atom      234    2  C     "C_Glutamic Acid C"               6  12.010000    3
+atom      235   29  H     "H_Glutamic Acid HN"              1  1.008000    1
+atom      236   24  O     "O_Glutamic Acid O"               8  16.000000    1
+atom      237   35  H1    "H1_Glutamic Acid HA"             1  1.008000    1
+atom      238    1  CT    "CT_Glutamic Acid CB"             6  12.010000    4
+atom      239   34  HC    "HC_Glutamic Acid HB"             1  1.008000    1
+atom      240    1  CT    "CT_Glutamic Acid CG"             6  12.010000    4
+atom      241   34  HC    "HC_Glutamic Acid HG"             1  1.008000    1
+atom      242    2  C     "C_Glutamic Acid CD"              6  12.010000    3
+atom      243   25  O2    "O2_Glutamic Acid OE"             8  16.000000    1
+atom      244   14  N     "N_Glutamine N"                   7  14.010000    3
+atom      245    1  CT    "CT_Glutamine CA"                 6  12.010000    4
+atom      246    2  C     "C_Glutamine C"                   6  12.010000    3
+atom      247   29  H     "H_Glutamine HN"                  1  1.008000    1
+atom      248   24  O     "O_Glutamine O"                   8  16.000000    1
+atom      249   35  H1    "H1_Glutamine HA"                 1  1.008000    1
+atom      250    1  CT    "CT_Glutamine CB"                 6  12.010000    4
+atom      251   34  HC    "HC_Glutamine HB"                 1  1.008000    1
+atom      252    1  CT    "CT_Glutamine CG"                 6  12.010000    4
+atom      253   34  HC    "HC_Glutamine HG"                 1  1.008000    1
+atom      254    2  C     "C_Glutamine CD"                  6  12.010000    3
+atom      255   24  O     "O_Glutamine OE1"                 8  16.000000    1
+atom      256   14  N     "N_Glutamine NE2"                 7  14.010000    3
+atom      257   29  H     "H_Glutamine HE2"                 1  1.008000    1
+atom      258   14  N     "N_Methionine N"                  7  14.010000    3
+atom      259    1  CT    "CT_Methionine CA"                6  12.010000    4
+atom      260    2  C     "C_Methionine C"                  6  12.010000    3
+atom      261   29  H     "H_Methionine HN"                 1  1.008000    1
+atom      262   24  O     "O_Methionine O"                  8  16.000000    1
+atom      263   35  H1    "H1_Methionine HA"                1  1.008000    1
+atom      264    1  CT    "CT_Methionine CB"                6  12.010000    4
+atom      265   34  HC    "HC_Methionine HB"                1  1.008000    1
+atom      266    1  CT    "CT_Methionine CG"                6  12.010000    4
+atom      267   35  H1    "H1_Methionine HG"                1  1.008000    1
+atom      268   26  S     "S_Methionine SD"                16  32.060000    2
+atom      269    1  CT    "CT_Methionine CE"                6  12.010000    4
+atom      270   35  H1    "H1_Methionine HE"                1  1.008000    1
+atom      271   14  N     "N_Lysine N"                      7  14.010000    3
+atom      272    1  CT    "CT_Lysine CA"                    6  12.010000    4
+atom      273    2  C     "C_Lysine C"                      6  12.010000    3
+atom      274   29  H     "H_Lysine HN"                     1  1.008000    1
+atom      275   24  O     "O_Lysine O"                      8  16.000000    1
+atom      276   35  H1    "H1_Lysine HA"                    1  1.008000    1
+atom      277    1  CT    "CT_Lysine CB"                    6  12.010000    4
+atom      278   34  HC    "HC_Lysine HB"                    1  1.008000    1
+atom      279    1  CT    "CT_Lysine CG"                    6  12.010000    4
+atom      280   34  HC    "HC_Lysine HG"                    1  1.008000    1
+atom      281    1  CT    "CT_Lysine CD"                    6  12.010000    4
+atom      282   34  HC    "HC_Lysine HD"                    1  1.008000    1
+atom      283    1  CT    "CT_Lysine CE"                    6  12.010000    4
+atom      284   38  HP    "HP_Lysine HE"                    1  1.008000    1
+atom      285   20  N3    "N3_Lysine NZ"                    7  14.010000    4
+atom      286   29  H     "H_Lysine HZ"                     1  1.008000    1
+atom      287   14  N     "N_Arginine N"                    7  14.010000    3
+atom      288    1  CT    "CT_Arginine CA"                  6  12.010000    4
+atom      289    2  C     "C_Arginine C"                    6  12.010000    3
+atom      290   29  H     "H_Arginine HN"                   1  1.008000    1
+atom      291   24  O     "O_Arginine O"                    8  16.000000    1
+atom      292   35  H1    "H1_Arginine HA"                  1  1.008000    1
+atom      293    1  CT    "CT_Arginine CB"                  6  12.010000    4
+atom      294   34  HC    "HC_Arginine HB"                  1  1.008000    1
+atom      295    1  CT    "CT_Arginine CG"                  6  12.010000    4
+atom      296   34  HC    "HC_Arginine HG"                  1  1.008000    1
+atom      297    1  CT    "CT_Arginine CD"                  6  12.010000    4
+atom      298   35  H1    "H1_Arginine HD"                  1  1.008000    1
+atom      299   19  N2    "N2_Arginine NE"                  7  14.010000    3
+atom      300   29  H     "H_Arginine HE"                   1  1.008000    1
+atom      301    3  CA    "CA_Arginine CZ"                  6  12.010000    3
+atom      302   19  N2    "N2_Arginine NH"                  7  14.010000    3
+atom      303   29  H     "H_Arginine HH"                   1  1.008000    1
+atom      304   14  N     "N_Ornithine N"                   7  14.010000    3
+atom      305    1  CT    "CT_Ornithine CA"                 6  12.010000    4
+atom      306    2  C     "C_Ornithine C"                   6  12.010000    3
+atom      307   29  H     "H_Ornithine HN"                  1  1.008000    1
+atom      308   24  O     "O_Ornithine O"                   8  16.000000    1
+atom      309   35  H1    "H1_Ornithine HA"                 1  1.008000    1
+atom      310    1  CT    "CT_Ornithine CB"                 6  12.010000    4
+atom      311   34  HC    "HC_Ornithine HB"                 1  1.008000    1
+atom      312    1  CT    "CT_Ornithine CG"                 6  12.010000    4
+atom      313   34  HC    "HC_Ornithine HG"                 1  1.008000    1
+atom      314    1  CT    "CT_Ornithine CD"                 6  12.010000    4
+atom      315   38  HP    "HP_Ornithine HD"                 1  1.008000    1
+atom      316   20  N3    "N3_Ornithine NE"                 7  14.010000    4
+atom      317   29  H     "H_Ornithine HE"                  1  1.008000    1
+atom      318   14  N     "N_MethylAlanine N"               7  14.010000    3
+atom      319    1  CT    "CT_MethylAlanine CA"             6  12.010000    4
+atom      320    2  C     "C_MethylAlanine C"               6  12.010000    3
+atom      321   29  H     "H_MethylAlanine HN"              1  1.008000    1
+atom      322   24  O     "O_MethylAlanine O"               8  16.000000    1
+atom      323    1  CT    "CT_MethylAlanine CB"             6  12.010000    4
+atom      324   34  HC    "HC_MethylAlanine HB"             1  1.008000    1
+atom      325   14  N     "N_Pyroglutamate N"               7  14.010000    3
+atom      326    1  CT    "CT_Pyroglutamate CA"             6  12.010000    4
+atom      327    2  C     "C_Pyroglutamate C"               6  12.010000    3
+atom      328   29  H     "H_Pyroglutamate HN"              1  1.008000    1
+atom      329   24  O     "O_Pyroglutamate O"               8  16.000000    1
+atom      330   35  H1    "H1_Pyroglutamate HA"             1  1.008000    1
+atom      331    1  CT    "CT_Pyroglutamate CB"             6  12.010000    4
+atom      332   34  HC    "HC_Pyroglutamate HB"             1  1.008000    1
+atom      333    1  CT    "CT_Pyroglutamate CG"             6  12.010000    4
+atom      334   34  HC    "HC_Pyroglutamate HG"             1  1.008000    1
+atom      335    2  C     "C_Pyroglutamate CD"              6  12.010000    3
+atom      336   24  O     "O_Pyroglutamate OE"              8  16.000000    1
+atom      337    2  C     "C_Formyl C"                      6  12.010000    3
+atom      339   24  O     "O_Formyl O"                      8  16.000000    1
+atom      340    1  CT    "CT_Acetyl CA"                    6  12.010000    4
+atom      341   34  HC    "HC_Acetyl HA"                    1  1.008000    1
+atom      342    2  C     "C_Acetyl C"                      6  12.010000    3
+atom      343   24  O     "O_Acetyl O"                      8  16.000000    1
+atom      344   14  N     "N_C-Term Amide N"                7  14.010000    3
+atom      345   29  H     "H_C-Term Amide HN"               1  1.008000    1
+atom      346   14  N     "N_N-MeAmide N"                   7  14.010000    3
+atom      347   29  H     "H_N-MeAmide HN"                  1  1.008000    1
+atom      348    1  CT    "CT_N-MeAmide C"                  6  12.010000    4
+atom      349   35  H1    "H1_N-MeAmide HC"                 1  1.008000    1
+atom      350   20  N3    "N3_N-Term GLY N"                 7  14.010000    4
+atom      351    1  CT    "CT_N-Term GLY CA"                6  12.010000    4
+atom      352    2  C     "C_N-Term GLY C"                  6  12.010000    3
+atom      353   29  H     "H_N-Term GLY HN"                 1  1.008000    1
+atom      354   24  O     "O_N-Term GLY O"                  8  16.000000    1
+atom      355   35  H1    "H1_N-Term GLY HA"                1  1.008000    1
+atom      356   20  N3    "N3_N-Term ALA N"                 7  14.010000    4
+atom      357    1  CT    "CT_N-Term ALA CA"                6  12.010000    4
+atom      358    2  C     "C_N-Term ALA C"                  6  12.010000    3
+atom      359   29  H     "H_N-Term ALA HN"                 1  1.008000    1
+atom      360   24  O     "O_N-Term ALA O"                  8  16.000000    1
+atom      361   35  H1    "H1_N-Term ALA HA"                1  1.008000    1
+atom      362   20  N3    "N3_N-Term VAL N"                 7  14.010000    4
+atom      363    1  CT    "CT_N-Term VAL CA"                6  12.010000    4
+atom      364    2  C     "C_N-Term VAL C"                  6  12.010000    3
+atom      365   29  H     "H_N-Term VAL HN"                 1  1.008000    1
+atom      366   24  O     "O_N-Term VAL O"                  8  16.000000    1
+atom      367   35  H1    "H1_N-Term VAL HA"                1  1.008000    1
+atom      368   20  N3    "N3_N-Term LEU N"                 7  14.010000    4
+atom      369    1  CT    "CT_N-Term LEU CA"                6  12.010000    4
+atom      370    2  C     "C_N-Term LEU C"                  6  12.010000    3
+atom      371   29  H     "H_N-Term LEU HN"                 1  1.008000    1
+atom      372   24  O     "O_N-Term LEU O"                  8  16.000000    1
+atom      373   35  H1    "H1_N-Term LEU HA"                1  1.008000    1
+atom      374   20  N3    "N3_N-Term ILE N"                 7  14.010000    4
+atom      375    1  CT    "CT_N-Term ILE CA"                6  12.010000    4
+atom      376    2  C     "C_N-Term ILE C"                  6  12.010000    3
+atom      377   29  H     "H_N-Term ILE HN"                 1  1.008000    1
+atom      378   24  O     "O_N-Term ILE O"                  8  16.000000    1
+atom      379   35  H1    "H1_N-Term ILE HA"                1  1.008000    1
+atom      380   20  N3    "N3_N-Term SER N"                 7  14.010000    4
+atom      381    1  CT    "CT_N-Term SER CA"                6  12.010000    4
+atom      382    2  C     "C_N-Term SER C"                  6  12.010000    3
+atom      383   29  H     "H_N-Term SER HN"                 1  1.008000    1
+atom      384   24  O     "O_N-Term SER O"                  8  16.000000    1
+atom      385   35  H1    "H1_N-Term SER HA"                1  1.008000    1
+atom      386   20  N3    "N3_N-Term THR N"                 7  14.010000    4
+atom      387    1  CT    "CT_N-Term THR CA"                6  12.010000    4
+atom      388    2  C     "C_N-Term THR C"                  6  12.010000    3
+atom      389   29  H     "H_N-Term THR HN"                 1  1.008000    1
+atom      390   24  O     "O_N-Term THR O"                  8  16.000000    1
+atom      391   35  H1    "H1_N-Term THR HA"                1  1.008000    1
+atom      392   20  N3    "N3_N-Term CYS (-SH) N"           7  14.010000    4
+atom      393    1  CT    "CT_N-Term CYS (-SH) CA"          6  12.010000    4
+atom      394    2  C     "C_N-Term CYS (-SH) C"            6  12.010000    3
+atom      395   29  H     "H_N-Term CYS (-SH) HN"           1  1.008000    1
+atom      396   24  O     "O_N-Term CYS (-SH) O"            8  16.000000    1
+atom      397   35  H1    "H1_N-Term CYS (-SH) HA"          1  1.008000    1
+atom      398   20  N3    "N3_N-Term CYS (-SS-) N"          7  14.010000    4
+atom      399    1  CT    "CT_N-Term CYS (-SS-) CA"         6  12.010000    4
+atom      400    2  C     "C_N-Term CYS (-SS-) C"           6  12.010000    3
+atom      401   29  H     "H_N-Term CYS (-SS-) HN"          1  1.008000    1
+atom      402   24  O     "O_N-Term CYS (-SS-) O"           8  16.000000    1
+atom      403   35  H1    "H1_N-Term CYS (-SS-) HA"         1  1.008000    1
+atom      404   20  N3    "N3_N-Term PRO N"                 7  14.010000    4
+atom      405    1  CT    "CT_N-Term PRO CA"                6  12.010000    4
+atom      406    2  C     "C_N-Term PRO C"                  6  12.010000    3
+atom      407   29  H     "H_N-Term PRO HN"                 1  1.008000    1
+atom      408   24  O     "O_N-Term PRO O"                  8  16.000000    1
+atom      409   35  H1    "H1_N-Term PRO HA"                1  1.008000    1
+atom      410    1  CT    "CT_N-Term PRO CD"                6  12.010000    4
+atom      411   38  HP    "HP_N-Term PRO HD"                1  1.008000    1
+atom      412   20  N3    "N3_N-Term PHE N"                 7  14.010000    4
+atom      413    1  CT    "CT_N-Term PHE CA"                6  12.010000    4
+atom      414    2  C     "C_N-Term PHE C"                  6  12.010000    3
+atom      415   29  H     "H_N-Term PHE HN"                 1  1.008000    1
+atom      416   24  O     "O_N-Term PHE O"                  8  16.000000    1
+atom      417   35  H1    "H1_N-Term PHE HA"                1  1.008000    1
+atom      418   20  N3    "N3_N-Term TYR N"                 7  14.010000    4
+atom      419    1  CT    "CT_N-Term TYR CA"                6  12.010000    4
+atom      420    2  C     "C_N-Term TYR C"                  6  12.010000    3
+atom      421   29  H     "H_N-Term TYR HN"                 1  1.008000    1
+atom      422   24  O     "O_N-Term TYR O"                  8  16.000000    1
+atom      423   35  H1    "H1_N-Term TYR HA"                1  1.008000    1
+atom      424   20  N3    "N3_N-Term TRP N"                 7  14.010000    4
+atom      425    1  CT    "CT_N-Term TRP CA"                6  12.010000    4
+atom      426    2  C     "C_N-Term TRP C"                  6  12.010000    3
+atom      427   29  H     "H_N-Term TRP HN"                 1  1.008000    1
+atom      428   24  O     "O_N-Term TRP O"                  8  16.000000    1
+atom      429   35  H1    "H1_N-Term TRP HA"                1  1.008000    1
+atom      430   20  N3    "N3_N-Term HIS (+) N"             7  14.010000    4
+atom      431    1  CT    "CT_N-Term HIS (+) CA"            6  12.010000    4
+atom      432    2  C     "C_N-Term HIS (+) C"              6  12.010000    3
+atom      433   29  H     "H_N-Term HIS (+) HN"             1  1.008000    1
+atom      434   24  O     "O_N-Term HIS (+) O"              8  16.000000    1
+atom      435   35  H1    "H1_N-Term HIS (+) HA"            1  1.008000    1
+atom      436   20  N3    "N3_N-Term HIS (HD) N"            7  14.010000    4
+atom      437    1  CT    "CT_N-Term HIS (HD) CA"           6  12.010000    4
+atom      438    2  C     "C_N-Term HIS (HD) C"             6  12.010000    3
+atom      439   29  H     "H_N-Term HIS (HD) HN"            1  1.008000    1
+atom      440   24  O     "O_N-Term HIS (HD) O"             8  16.000000    1
+atom      441   35  H1    "H1_N-Term HIS (HD) HA"           1  1.008000    1
+atom      442   20  N3    "N3_N-Term HIS (HE) N"            7  14.010000    4
+atom      443    1  CT    "CT_N-Term HIS (HE) CA"           6  12.010000    4
+atom      444    2  C     "C_N-Term HIS (HE) C"             6  12.010000    3
+atom      445   29  H     "H_N-Term HIS (HE) HN"            1  1.008000    1
+atom      446   24  O     "O_N-Term HIS (HE) O"             8  16.000000    1
+atom      447   35  H1    "H1_N-Term HIS (HE) HA"           1  1.008000    1
+atom      448   20  N3    "N3_N-Term ASP N"                 7  14.010000    4
+atom      449    1  CT    "CT_N-Term ASP CA"                6  12.010000    4
+atom      450    2  C     "C_N-Term ASP C"                  6  12.010000    3
+atom      451   29  H     "H_N-Term ASP HN"                 1  1.008000    1
+atom      452   24  O     "O_N-Term ASP O"                  8  16.000000    1
+atom      453   35  H1    "H1_N-Term ASP HA"                1  1.008000    1
+atom      454   20  N3    "N3_N-Term ASN N"                 7  14.010000    4
+atom      455    1  CT    "CT_N-Term ASN CA"                6  12.010000    4
+atom      456    2  C     "C_N-Term ASN C"                  6  12.010000    3
+atom      457   29  H     "H_N-Term ASN HN"                 1  1.008000    1
+atom      458   24  O     "O_N-Term ASN O"                  8  16.000000    1
+atom      459   35  H1    "H1_N-Term ASN HA"                1  1.008000    1
+atom      460   20  N3    "N3_N-Term GLU N"                 7  14.010000    4
+atom      461    1  CT    "CT_N-Term GLU CA"                6  12.010000    4
+atom      462    2  C     "C_N-Term GLU C"                  6  12.010000    3
+atom      463   29  H     "H_N-Term GLU HN"                 1  1.008000    1
+atom      464   24  O     "O_N-Term GLU O"                  8  16.000000    1
+atom      465   35  H1    "H1_N-Term GLU HA"                1  1.008000    1
+atom      466   20  N3    "N3_N-Term GLN N"                 7  14.010000    4
+atom      467    1  CT    "CT_N-Term GLN CA"                6  12.010000    4
+atom      468    2  C     "C_N-Term GLN C"                  6  12.010000    3
+atom      469   29  H     "H_N-Term GLN HN"                 1  1.008000    1
+atom      470   24  O     "O_N-Term GLN O"                  8  16.000000    1
+atom      471   35  H1    "H1_N-Term GLN HA"                1  1.008000    1
+atom      472   20  N3    "N3_N-Term MET N"                 7  14.010000    4
+atom      473    1  CT    "CT_N-Term MET CA"                6  12.010000    4
+atom      474    2  C     "C_N-Term MET C"                  6  12.010000    3
+atom      475   29  H     "H_N-Term MET HN"                 1  1.008000    1
+atom      476   24  O     "O_N-Term MET O"                  8  16.000000    1
+atom      477   35  H1    "H1_N-Term MET HA"                1  1.008000    1
+atom      478   20  N3    "N3_N-Term LYS N"                 7  14.010000    4
+atom      479    1  CT    "CT_N-Term LYS CA"                6  12.010000    4
+atom      480    2  C     "C_N-Term LYS C"                  6  12.010000    3
+atom      481   29  H     "H_N-Term LYS HN"                 1  1.008000    1
+atom      482   24  O     "O_N-Term LYS O"                  8  16.000000    1
+atom      483   35  H1    "H1_N-Term LYS HA"                1  1.008000    1
+atom      484   20  N3    "N3_N-Term ARG N"                 7  14.010000    4
+atom      485    1  CT    "CT_N-Term ARG CA"                6  12.010000    4
+atom      486    2  C     "C_N-Term ARG C"                  6  12.010000    3
+atom      487   29  H     "H_N-Term ARG HN"                 1  1.008000    1
+atom      488   24  O     "O_N-Term ARG O"                  8  16.000000    1
+atom      489   35  H1    "H1_N-Term ARG HA"                1  1.008000    1
+atom      490   20  N3    "N3_N-Term ORN N"                 7  14.010000    4
+atom      491    1  CT    "CT_N-Term ORN CA"                6  12.010000    4
+atom      492    2  C     "C_N-Term ORN C"                  6  12.010000    3
+atom      493   29  H     "H_N-Term ORN HN"                 1  1.008000    1
+atom      494   24  O     "O_N-Term ORN O"                  8  16.000000    1
+atom      495   35  H1    "H1_N-Term ORN HA"                1  1.008000    1
+atom      496   20  N3    "N3_N-Term AIB N"                 7  14.010000    4
+atom      497    1  CT    "CT_N-Term AIB CA"                6  12.010000    4
+atom      498    2  C     "C_N-Term AIB C"                  6  12.010000    3
+atom      499   29  H     "H_N-Term AIB HN"                 1  1.008000    1
+atom      500   24  O     "O_N-Term AIB O"                  8  16.000000    1
+atom      501   14  N     "N_C-Term GLY N"                  7  14.010000    3
+atom      502    1  CT    "CT_C-Term GLY CA"                6  12.010000    4
+atom      503    2  C     "C_C-Term GLY C"                  6  12.010000    3
+atom      504   29  H     "H_C-Term GLY HN"                 1  1.008000    1
+atom      505   25  O2    "O2_C-Term GLY OXT"               8  16.000000    1
+atom      506   35  H1    "H1_C-Term GLY HA"                1  1.008000    1
+atom      507   14  N     "N_C-Term ALA N"                  7  14.010000    3
+atom      508    1  CT    "CT_C-Term ALA CA"                6  12.010000    4
+atom      509    2  C     "C_C-Term ALA C"                  6  12.010000    3
+atom      510   29  H     "H_C-Term ALA HN"                 1  1.008000    1
+atom      511   25  O2    "O2_C-Term ALA OXT"               8  16.000000    1
+atom      512   35  H1    "H1_C-Term ALA HA"                1  1.008000    1
+atom      513   14  N     "N_C-Term VAL N"                  7  14.010000    3
+atom      514    1  CT    "CT_C-Term VAL CA"                6  12.010000    4
+atom      515    2  C     "C_C-Term VAL C"                  6  12.010000    3
+atom      516   29  H     "H_C-Term VAL HN"                 1  1.008000    1
+atom      517   25  O2    "O2_C-Term VAL OXT"               8  16.000000    1
+atom      518   35  H1    "H1_C-Term VAL HA"                1  1.008000    1
+atom      519   14  N     "N_C-Term LEU N"                  7  14.010000    3
+atom      520    1  CT    "CT_C-Term LEU CA"                6  12.010000    4
+atom      521    2  C     "C_C-Term LEU C"                  6  12.010000    3
+atom      522   29  H     "H_C-Term LEU HN"                 1  1.008000    1
+atom      523   25  O2    "O2_C-Term LEU OXT"               8  16.000000    1
+atom      524   35  H1    "H1_C-Term LEU HA"                1  1.008000    1
+atom      525   14  N     "N_C-Term ILE N"                  7  14.010000    3
+atom      526    1  CT    "CT_C-Term ILE CA"                6  12.010000    4
+atom      527    2  C     "C_C-Term ILE C"                  6  12.010000    3
+atom      528   29  H     "H_C-Term ILE HN"                 1  1.008000    1
+atom      529   25  O2    "O2_C-Term ILE OXT"               8  16.000000    1
+atom      530   35  H1    "H1_C-Term ILE HA"                1  1.008000    1
+atom      531   14  N     "N_C-Term SER N"                  7  14.010000    3
+atom      532    1  CT    "CT_C-Term SER CA"                6  12.010000    4
+atom      533    2  C     "C_C-Term SER C"                  6  12.010000    3
+atom      534   29  H     "H_C-Term SER HN"                 1  1.008000    1
+atom      535   25  O2    "O2_C-Term SER OXT"               8  16.000000    1
+atom      536   35  H1    "H1_C-Term SER HA"                1  1.008000    1
+atom      537   14  N     "N_C-Term THR N"                  7  14.010000    3
+atom      538    1  CT    "CT_C-Term THR CA"                6  12.010000    4
+atom      539    2  C     "C_C-Term THR C"                  6  12.010000    3
+atom      540   29  H     "H_C-Term THR HN"                 1  1.008000    1
+atom      541   25  O2    "O2_C-Term THR OXT"               8  16.000000    1
+atom      542   35  H1    "H1_C-Term THR HA"                1  1.008000    1
+atom      543   14  N     "N_C-Term CYS (-SH) N"            7  14.010000    3
+atom      544    1  CT    "CT_C-Term CYS (-SH) CA"          6  12.010000    4
+atom      545    2  C     "C_C-Term CYS (-SH) C"            6  12.010000    3
+atom      546   29  H     "H_C-Term CYS (-SH) HN"           1  1.008000    1
+atom      547   25  O2    "O2_C-Term CYS (-SH) OXT"         8  16.000000    1
+atom      548   35  H1    "H1_C-Term CYS (-SH) HA"          1  1.008000    1
+atom      549   14  N     "N_C-Term CYS (-SS-) N"           7  14.010000    3
+atom      550    1  CT    "CT_C-Term CYS (-SS-) CA"         6  12.010000    4
+atom      551    2  C     "C_C-Term CYS (-SS-) C"           6  12.010000    3
+atom      552   29  H     "H_C-Term CYS (-SS-) HN"          1  1.008000    1
+atom      553   25  O2    "O2_C-Term CYS (-SS-) OXT"        8  16.000000    1
+atom      554   35  H1    "H1_C-Term CYS (-SS-) HA"         1  1.008000    1
+atom      555   14  N     "N_C-Term PRO N"                  7  14.010000    3
+atom      556    1  CT    "CT_C-Term PRO CA"                6  12.010000    4
+atom      557    2  C     "C_C-Term PRO C"                  6  12.010000    3
+atom      558   25  O2    "O2_C-Term PRO OXT"               8  16.000000    1
+atom      559   35  H1    "H1_C-Term PRO HA"                1  1.008000    1
+atom      560   14  N     "N_C-Term PHE N"                  7  14.010000    3
+atom      561    1  CT    "CT_C-Term PHE CA"                6  12.010000    4
+atom      562    2  C     "C_C-Term PHE C"                  6  12.010000    3
+atom      563   29  H     "H_C-Term PHE HN"                 1  1.008000    1
+atom      564   25  O2    "O2_C-Term PHE OXT"               8  16.000000    1
+atom      565   35  H1    "H1_C-Term PHE HA"                1  1.008000    1
+atom      566   14  N     "N_C-Term TYR N"                  7  14.010000    3
+atom      567    1  CT    "CT_C-Term TYR CA"                6  12.010000    4
+atom      568    2  C     "C_C-Term TYR C"                  6  12.010000    3
+atom      569   29  H     "H_C-Term TYR HN"                 1  1.008000    1
+atom      570   25  O2    "O2_C-Term TYR OXT"               8  16.000000    1
+atom      571   35  H1    "H1_C-Term TYR HA"                1  1.008000    1
+atom      572   14  N     "N_C-Term TRP N"                  7  14.010000    3
+atom      573    1  CT    "CT_C-Term TRP CA"                6  12.010000    4
+atom      574    2  C     "C_C-Term TRP C"                  6  12.010000    3
+atom      575   29  H     "H_C-Term TRP HN"                 1  1.008000    1
+atom      576   25  O2    "O2_C-Term TRP OXT"               8  16.000000    1
+atom      577   35  H1    "H1_C-Term TRP HA"                1  1.008000    1
+atom      578   14  N     "N_C-Term HIS (+) N"              7  14.010000    3
+atom      579    1  CT    "CT_C-Term HIS (+) CA"            6  12.010000    4
+atom      580    2  C     "C_C-Term HIS (+) C"              6  12.010000    3
+atom      581   29  H     "H_C-Term HIS (+) HN"             1  1.008000    1
+atom      582   25  O2    "O2_C-Term HIS (+) OXT"           8  16.000000    1
+atom      583   35  H1    "H1_C-Term HIS (+) HA"            1  1.008000    1
+atom      584   14  N     "N_C-Term HIS (HD) N"             7  14.010000    3
+atom      585    1  CT    "CT_C-Term HIS (HD) CA"           6  12.010000    4
+atom      586    2  C     "C_C-Term HIS (HD) C"             6  12.010000    3
+atom      587   29  H     "H_C-Term HIS (HD) HN"            1  1.008000    1
+atom      588   25  O2    "O2_C-Term HIS (HD) OXT"          8  16.000000    1
+atom      589   35  H1    "H1_C-Term HIS (HD) HA"           1  1.008000    1
+atom      590   14  N     "N_C-Term HIS (HE) N"             7  14.010000    3
+atom      591    1  CT    "CT_C-Term HIS (HE) CA"           6  12.010000    4
+atom      592    2  C     "C_C-Term HIS (HE) C"             6  12.010000    3
+atom      593   29  H     "H_C-Term HIS (HE) HN"            1  1.008000    1
+atom      594   25  O2    "O2_C-Term HIS (HE) OXT"          8  16.000000    1
+atom      595   35  H1    "H1_C-Term HIS (HE) HA"           1  1.008000    1
+atom      596   14  N     "N_C-Term ASP N"                  7  14.010000    3
+atom      597    1  CT    "CT_C-Term ASP CA"                6  12.010000    4
+atom      598    2  C     "C_C-Term ASP C"                  6  12.010000    3
+atom      599   29  H     "H_C-Term ASP HN"                 1  1.008000    1
+atom      600   25  O2    "O2_C-Term ASP OXT"               8  16.000000    1
+atom      601   35  H1    "H1_C-Term ASP HA"                1  1.008000    1
+atom      602   14  N     "N_C-Term ASN N"                  7  14.010000    3
+atom      603    1  CT    "CT_C-Term ASN CA"                6  12.010000    4
+atom      604    2  C     "C_C-Term ASN C"                  6  12.010000    3
+atom      605   29  H     "H_C-Term ASN HN"                 1  1.008000    1
+atom      606   25  O2    "O2_C-Term ASN OXT"               8  16.000000    1
+atom      607   35  H1    "H1_C-Term ASN HA"                1  1.008000    1
+atom      608   14  N     "N_C-Term GLU N"                  7  14.010000    3
+atom      609    1  CT    "CT_C-Term GLU CA"                6  12.010000    4
+atom      610    2  C     "C_C-Term GLU C"                  6  12.010000    3
+atom      611   29  H     "H_C-Term GLU HN"                 1  1.008000    1
+atom      612   25  O2    "O2_C-Term GLU OXT"               8  16.000000    1
+atom      613   35  H1    "H1_C-Term GLU HA"                1  1.008000    1
+atom      614   14  N     "N_C-Term GLN N"                  7  14.010000    3
+atom      615    1  CT    "CT_C-Term GLN CA"                6  12.010000    4
+atom      616    2  C     "C_C-Term GLN C"                  6  12.010000    3
+atom      617   29  H     "H_C-Term GLN HN"                 1  1.008000    1
+atom      618   25  O2    "O2_C-Term GLN OXT"               8  16.000000    1
+atom      619   35  H1    "H1_C-Term GLN HA"                1  1.008000    1
+atom      620   14  N     "N_C-Term MET N"                  7  14.010000    3
+atom      621    1  CT    "CT_C-Term MET CA"                6  12.010000    4
+atom      622    2  C     "C_C-Term MET C"                  6  12.010000    3
+atom      623   29  H     "H_C-Term MET HN"                 1  1.008000    1
+atom      624   25  O2    "O2_C-Term MET OXT"               8  16.000000    1
+atom      625   35  H1    "H1_C-Term MET HA"                1  1.008000    1
+atom      626   14  N     "N_C-Term LYS N"                  7  14.010000    3
+atom      627    1  CT    "CT_C-Term LYS CA"                6  12.010000    4
+atom      628    2  C     "C_C-Term LYS C"                  6  12.010000    3
+atom      629   29  H     "H_C-Term LYS HN"                 1  1.008000    1
+atom      630   25  O2    "O2_C-Term LYS OXT"               8  16.000000    1
+atom      631   35  H1    "H1_C-Term LYS HA"                1  1.008000    1
+atom      632   14  N     "N_C-Term ARG N"                  7  14.010000    3
+atom      633    1  CT    "CT_C-Term ARG CA"                6  12.010000    4
+atom      634    2  C     "C_C-Term ARG C"                  6  12.010000    3
+atom      635   29  H     "H_C-Term ARG HN"                 1  1.008000    1
+atom      636   25  O2    "O2_C-Term ARG OXT"               8  16.000000    1
+atom      637   35  H1    "H1_C-Term ARG HA"                1  1.008000    1
+atom      638   14  N     "N_C-Term ORN N"                  7  14.010000    3
+atom      639    1  CT    "CT_C-Term ORN CA"                6  12.010000    4
+atom      640    2  C     "C_C-Term ORN C"                  6  12.010000    3
+atom      641   29  H     "H_C-Term ORN HN"                 1  1.008000    1
+atom      642   25  O2    "O2_C-Term ORN OXT"               8  16.000000    1
+atom      643   35  H1    "H1_C-Term ORN HA"                1  1.008000    1
+atom      644   14  N     "N_C-Term AIB N"                  7  14.010000    3
+atom      645    1  CT    "CT_C-Term AIB CA"                6  12.010000    4
+atom      646    2  C     "C_C-Term AIB C"                  6  12.010000    3
+atom      647   29  H     "H_C-Term AIB HN"                 1  1.008000    1
+atom      648   25  O2    "O2_C-Term AIB OXT"               8  16.000000    1
+atom      1001   23  OS    "OS_R-Adenosine O5'"              8  16.000000    2
+atom      1002    1  CT    "CT_R-Adenosine C5'"              6  12.010000    4
+atom      1003   35  H1    "H1_R-Adenosine H5'1"             1  1.008000    1
+atom      1004   35  H1    "H1_R-Adenosine H5'2"             1  1.008000    1
+atom      1005    1  CT    "CT_R-Adenosine C4'"              6  12.010000    4
+atom      1006   35  H1    "H1_R-Adenosine H4'"              1  1.008000    1
+atom      1007   23  OS    "OS_R-Adenosine O4'"              8  16.000000    2
+atom      1008    1  CT    "CT_R-Adenosine C1'"              6  12.010000    4
+atom      1009   36  H2    "H2_R-Adenosine H1'"              1  1.008000    1
+atom      1010    1  CT    "CT_R-Adenosine C3'"              6  12.010000    4
+atom      1011   35  H1    "H1_R-Adenosine H3'"              1  1.008000    1
+atom      1012    1  CT    "CT_R-Adenosine C2'"              6  12.010000    4
+atom      1013   35  H1    "H1_R-Adenosine H2'1"             1  1.008000    1
+atom      1014   22  OH    "OH_R-Adenosine O2'"              8  16.000000    2
+atom      1015   31  HO    "HO_R-Adenosine HO'2"             1  1.008000    1
+atom      1016   23  OS    "OS_R-Adenosine O3'"              8  16.000000    2
+atom      1017   18  N*    "N*_R-Adenosine N9"               7  14.010000    3
+atom      1018    9  CB    "CB_R-Adenosine C4"               6  12.010000    3
+atom      1019    9  CB    "CB_R-Adenosine C5"               6  12.010000    3
+atom      1020   16  NB    "NB_R-Adenosine N7"               7  14.010000    2
+atom      1021   12  CK    "CK_R-Adenosine C8"               6  12.010000    3
+atom      1022   17  NC    "NC_R-Adenosine N3"               7  14.010000    2
+atom      1023   13  CQ    "CQ_R-Adenosine C2"               6  12.010000    3
+atom      1024   17  NC    "NC_R-Adenosine N1"               7  14.010000    2
+atom      1025    3  CA    "CA_R-Adenosine C6"               6  12.010000    3
+atom      1026   40  H5    "H5_R-Adenosine H2"               1  1.008000    1
+atom      1027   19  N2    "N2_R-Adenosine N6"               7  14.010000    3
+atom      1028   29  H     "H_R-Adenosine H61"               1  1.008000    1
+atom      1029   29  H     "H_R-Adenosine H62"               1  1.008000    1
+atom      1030   40  H5    "H5_R-Adenosine H8"               1  1.008000    1
+atom      1031   23  OS    "OS_R-Guanosine O5'"              8  16.000000    2
+atom      1032    1  CT    "CT_R-Guanosine C5'"              6  12.010000    4
+atom      1033   35  H1    "H1_R-Guanosine H5'1"             1  1.008000    1
+atom      1034   35  H1    "H1_R-Guanosine H5'2"             1  1.008000    1
+atom      1035    1  CT    "CT_R-Guanosine C4'"              6  12.010000    4
+atom      1036   35  H1    "H1_R-Guanosine H4'"              1  1.008000    1
+atom      1037   23  OS    "OS_R-Guanosine O4'"              8  16.000000    2
+atom      1038    1  CT    "CT_R-Guanosine C1'"              6  12.010000    4
+atom      1039   36  H2    "H2_R-Guanosine H1'"              1  1.008000    1
+atom      1040    1  CT    "CT_R-Guanosine C3'"              6  12.010000    4
+atom      1041   35  H1    "H1_R-Guanosine H3'"              1  1.008000    1
+atom      1042    1  CT    "CT_R-Guanosine C2'"              6  12.010000    4
+atom      1043   35  H1    "H1_R-Guanosine H2'1"             1  1.008000    1
+atom      1044   22  OH    "OH_R-Guanosine O2'"              8  16.000000    2
+atom      1045   31  HO    "HO_R-Guanosine HO'2"             1  1.008000    1
+atom      1046   23  OS    "OS_R-Guanosine O3'"              8  16.000000    2
+atom      1047   18  N*    "N*_R-Guanosine N9"               7  14.010000    3
+atom      1048    9  CB    "CB_R-Guanosine C4"               6  12.010000    3
+atom      1049    9  CB    "CB_R-Guanosine C5"               6  12.010000    3
+atom      1050   16  NB    "NB_R-Guanosine N7"               7  14.010000    2
+atom      1051   12  CK    "CK_R-Guanosine C8"               6  12.010000    3
+atom      1052   17  NC    "NC_R-Guanosine N3"               7  14.010000    2
+atom      1053    3  CA    "CA_R-Guanosine C2"               6  12.010000    3
+atom      1054   15  NA    "NA_R-Guanosine N1"               7  14.010000    3
+atom      1055    2  C     "C_R-Guanosine C6"                6  12.010000    3
+atom      1056   29  H     "H_R-Guanosine H1"                1  1.008000    1
+atom      1057   19  N2    "N2_R-Guanosine N2"               7  14.010000    3
+atom      1058   29  H     "H_R-Guanosine H21"               1  1.008000    1
+atom      1059   29  H     "H_R-Guanosine H22"               1  1.008000    1
+atom      1060   24  O     "O_R-Guanosine O6"                8  16.000000    1
+atom      1061   40  H5    "H5_R-Guanosine H8"               1  1.008000    1
+atom      1062   23  OS    "OS_R-Cytosine O5'"               8  16.000000    2
+atom      1063    1  CT    "CT_R-Cytosine C5'"               6  12.010000    4
+atom      1064   35  H1    "H1_R-Cytosine H5'1"              1  1.008000    1
+atom      1065   35  H1    "H1_R-Cytosine H5'2"              1  1.008000    1
+atom      1066    1  CT    "CT_R-Cytosine C4'"               6  12.010000    4
+atom      1067   35  H1    "H1_R-Cytosine H4'"               1  1.008000    1
+atom      1068   23  OS    "OS_R-Cytosine O4'"               8  16.000000    2
+atom      1069    1  CT    "CT_R-Cytosine C1'"               6  12.010000    4
+atom      1070   36  H2    "H2_R-Cytosine H1'"               1  1.008000    1
+atom      1071    1  CT    "CT_R-Cytosine C3'"               6  12.010000    4
+atom      1072   35  H1    "H1_R-Cytosine H3'"               1  1.008000    1
+atom      1073    1  CT    "CT_R-Cytosine C2'"               6  12.010000    4
+atom      1074   35  H1    "H1_R-Cytosine H2'1"              1  1.008000    1
+atom      1075   22  OH    "OH_R-Cytosine O2'"               8  16.000000    2
+atom      1076   31  HO    "HO_R-Cytosine HO'2"              1  1.008000    1
+atom      1077   23  OS    "OS_R-Cytosine O3'"               8  16.000000    2
+atom      1078   18  N*    "N*_R-Cytosine N1"                7  14.010000    3
+atom      1079    2  C     "C_R-Cytosine C2"                 6  12.010000    3
+atom      1080   17  NC    "NC_R-Cytosine N3"                7  14.010000    2
+atom      1081    3  CA    "CA_R-Cytosine C4"                6  12.010000    3
+atom      1082    4  CM    "CM_R-Cytosine C5"                6  12.010000    3
+atom      1083    4  CM    "CM_R-Cytosine C6"                6  12.010000    3
+atom      1084   24  O     "O_R-Cytosine O2"                 8  16.000000    1
+atom      1085   19  N2    "N2_R-Cytosine N4"                7  14.010000    3
+atom      1086   29  H     "H_R-Cytosine H41"                1  1.008000    1
+atom      1087   29  H     "H_R-Cytosine H42"                1  1.008000    1
+atom      1088   33  HA    "HA_R-Cytosine H5"                1  1.008000    1
+atom      1089   39  H4    "H4_R-Cytosine H6"                1  1.008000    1
+atom      1090   23  OS    "OS_R-Uracil O5'"                 8  16.000000    2
+atom      1091    1  CT    "CT_R-Uracil C5'"                 6  12.010000    4
+atom      1092   35  H1    "H1_R-Uracil H5'1"                1  1.008000    1
+atom      1093   35  H1    "H1_R-Uracil H5'2"                1  1.008000    1
+atom      1094    1  CT    "CT_R-Uracil C4'"                 6  12.010000    4
+atom      1095   35  H1    "H1_R-Uracil H4'"                 1  1.008000    1
+atom      1096   23  OS    "OS_R-Uracil O4'"                 8  16.000000    2
+atom      1097    1  CT    "CT_R-Uracil C1'"                 6  12.010000    4
+atom      1098   36  H2    "H2_R-Uracil H1'"                 1  1.008000    1
+atom      1099    1  CT    "CT_R-Uracil C3'"                 6  12.010000    4
+atom      1100   35  H1    "H1_R-Uracil H3'"                 1  1.008000    1
+atom      1101    1  CT    "CT_R-Uracil C2'"                 6  12.010000    4
+atom      1102   35  H1    "H1_R-Uracil H2'1"                1  1.008000    1
+atom      1103   22  OH    "OH_R-Uracil O2'"                 8  16.000000    2
+atom      1104   31  HO    "HO_R-Uracil HO'2"                1  1.008000    1
+atom      1105   23  OS    "OS_R-Uracil O3'"                 8  16.000000    2
+atom      1106   18  N*    "N*_R-Uracil N1"                  7  14.010000    3
+atom      1107    2  C     "C_R-Uracil C2"                   6  12.010000    3
+atom      1108   15  NA    "NA_R-Uracil N3"                  7  14.010000    3
+atom      1109    2  C     "C_R-Uracil C4"                   6  12.010000    3
+atom      1110    4  CM    "CM_R-Uracil C5"                  6  12.010000    3
+atom      1111    4  CM    "CM_R-Uracil C6"                  6  12.010000    3
+atom      1112   24  O     "O_R-Uracil O2"                   8  16.000000    1
+atom      1113   29  H     "H_R-Uracil H3"                   1  1.008000    1
+atom      1114   24  O     "O_R-Uracil O4"                   8  16.000000    1
+atom      1115   33  HA    "HA_R-Uracil H5"                  1  1.008000    1
+atom      1116   39  H4    "H4_R-Uracil H6"                  1  1.008000    1
+atom      1117   23  OS    "OS_D-Adenosine O5'"              8  16.000000    2
+atom      1118    1  CT    "CT_D-Adenosine C5'"              6  12.010000    4
+atom      1119   35  H1    "H1_D-Adenosine H5'1"             1  1.008000    1
+atom      1120   35  H1    "H1_D-Adenosine H5'2"             1  1.008000    1
+atom      1121    1  CT    "CT_D-Adenosine C4'"              6  12.010000    4
+atom      1122   35  H1    "H1_D-Adenosine H4'"              1  1.008000    1
+atom      1123   23  OS    "OS_D-Adenosine O4'"              8  16.000000    2
+atom      1124    1  CT    "CT_D-Adenosine C1'"              6  12.010000    4
+atom      1125   36  H2    "H2_D-Adenosine H1'"              1  1.008000    1
+atom      1126    1  CT    "CT_D-Adenosine C3'"              6  12.010000    4
+atom      1127   35  H1    "H1_D-Adenosine H3'"              1  1.008000    1
+atom      1128    1  CT    "CT_D-Adenosine C2'"              6  12.010000    4
+atom      1129   34  HC    "HC_D-Adenosine H2'1"             1  1.008000    1
+atom      1130   34  HC    "HC_D-Adenosine H2'2"             1  1.008000    1
+atom      1131   23  OS    "OS_D-Adenosine O3'"              8  16.000000    2
+atom      1132   18  N*    "N*_D-Adenosine N9"               7  14.010000    3
+atom      1133    9  CB    "CB_D-Adenosine C4"               6  12.010000    3
+atom      1134    9  CB    "CB_D-Adenosine C5"               6  12.010000    3
+atom      1135   16  NB    "NB_D-Adenosine N7"               7  14.010000    2
+atom      1136   12  CK    "CK_D-Adenosine C8"               6  12.010000    3
+atom      1137   17  NC    "NC_D-Adenosine N3"               7  14.010000    2
+atom      1138   13  CQ    "CQ_D-Adenosine C2"               6  12.010000    3
+atom      1139   17  NC    "NC_D-Adenosine N1"               7  14.010000    2
+atom      1140    3  CA    "CA_D-Adenosine C6"               6  12.000000    3
+atom      1141   40  H5    "H5_D-Adenosine H2"               1  1.008000    1
+atom      1142   19  N2    "N2_D-Adenosine N6"               7  14.010000    3
+atom      1143   29  H     "H_D-Adenosine H61"               1  1.008000    1
+atom      1144   29  H     "H_D-Adenosine H62"               1  1.008000    1
+atom      1145   40  H5    "H5_D-Adenosine H8"               1  1.008000    1
+atom      1146   23  OS    "OS_D-Guanosine O5'"              8  16.000000    2
+atom      1147    1  CT    "CT_D-Guanosine C5'"              6  12.010000    4
+atom      1148   35  H1    "H1_D-Guanosine H5'1"             1  1.008000    1
+atom      1149   35  H1    "H1_D-Guanosine H5'2"             1  1.008000    1
+atom      1150    1  CT    "CT_D-Guanosine C4'"              6  12.010000    4
+atom      1151   35  H1    "H1_D-Guanosine H4'"              1  1.008000    1
+atom      1152   23  OS    "OS_D-Guanosine O4'"              8  16.000000    2
+atom      1153    1  CT    "CT_D-Guanosine C1'"              6  12.010000    4
+atom      1154   36  H2    "H2_D-Guanosine H1'"              1  1.008000    1
+atom      1155    1  CT    "CT_D-Guanosine C3'"              6  12.010000    4
+atom      1156   35  H1    "H1_D-Guanosine H3'"              1  1.008000    1
+atom      1157    1  CT    "CT_D-Guanosine C2'"              6  12.010000    4
+atom      1158   34  HC    "HC_D-Guanosine H2'1"             1  1.008000    1
+atom      1159   34  HC    "HC_D-Guanosine H2'2"             1  1.008000    1
+atom      1160   23  OS    "OS_D-Guanosine O3'"              8  16.000000    2
+atom      1161   18  N*    "N*_D-Guanosine N9"               7  14.010000    3
+atom      1162    9  CB    "CB_D-Guanosine C4"               6  12.010000    3
+atom      1163    9  CB    "CB_D-Guanosine C5"               6  12.010000    3
+atom      1164   16  NB    "NB_D-Guanosine N7"               7  14.010000    2
+atom      1165   12  CK    "CK_D-Guanosine C8"               6  12.010000    3
+atom      1166   17  NC    "NC_D-Guanosine N3"               7  14.010000    2
+atom      1167    3  CA    "CA_D-Guanosine C2"               6  12.010000    3
+atom      1168   15  NA    "NA_D-Guanosine N1"               7  14.010000    3
+atom      1169    2  C     "C_D-Guanosine C6"                6  12.010000    3
+atom      1170   29  H     "H_D-Guanosine H1"                1  1.008000    1
+atom      1171   19  N2    "N2_D-Guanosine N2"               7  14.010000    3
+atom      1172   29  H     "H_D-Guanosine H21"               1  1.008000    1
+atom      1173   29  H     "H_D-Guanosine H22"               1  1.008000    1
+atom      1174   24  O     "O_D-Guanosine O6"                8  16.000000    1
+atom      1175   40  H5    "H5_D-Guanosine H8"               1  1.008000    1
+atom      1176   23  OS    "OS_D-Cytosine O5'"               8  16.000000    2
+atom      1177    1  CT    "CT_D-Cytosine C5'"               6  12.010000    4
+atom      1178   35  H1    "H1_D-Cytosine H5'1"              1  1.008000    1
+atom      1179   35  H1    "H1_D-Cytosine H5'2"              1  1.008000    1
+atom      1180    1  CT    "CT_D-Cytosine C4'"               6  12.010000    4
+atom      1181   35  H1    "H1_D-Cytosine H4'"               1  1.008000    1
+atom      1182   23  OS    "OS_D-Cytosine O4'"               8  16.000000    2
+atom      1183    1  CT    "CT_D-Cytosine C1'"               6  12.010000    4
+atom      1184   36  H2    "H2_D-Cytosine H1'"               1  1.008000    1
+atom      1185    1  CT    "CT_D-Cytosine C3'"               6  12.010000    4
+atom      1186   35  H1    "H1_D-Cytosine H3'"               1  1.008000    1
+atom      1187    1  CT    "CT_D-Cytosine C2'"               6  12.010000    4
+atom      1188   34  HC    "HC_D-Cytosine H2'1"              1  1.008000    1
+atom      1189   34  HC    "HC_D-Cytosine H2'2"              1  1.008000    1
+atom      1190   23  OS    "OS_D-Cytosine O3'"               8  16.000000    2
+atom      1191   18  N*    "N*_D-Cytosine N1"                7  14.010000    3
+atom      1192    2  C     "C_D-Cytosine C2"                 6  12.010000    3
+atom      1193   17  NC    "NC_D-Cytosine N3"                7  14.010000    2
+atom      1194    3  CA    "CA_D-Cytosine C4"                6  12.010000    3
+atom      1195    4  CM    "CM_D-Cytosine C5"                6  12.010000    3
+atom      1196    4  CM    "CM_D-Cytosine C6"                6  12.010000    3
+atom      1197   24  O     "O_D-Cytosine O2"                 8  16.000000    1
+atom      1198   19  N2    "N2_D-Cytosine N4"                7  14.010000    3
+atom      1199   29  H     "H_D-Cytosine H41"                1  1.008000    1
+atom      1200   29  H     "H_D-Cytosine H42"                1  1.008000    1
+atom      1201   33  HA    "HA_D-Cytosine H5"                1  1.008000    1
+atom      1202   39  H4    "H4_D-Cytosine H6"                1  1.008000    1
+atom      1203   23  OS    "OS_D-Thymine O5'"                8  16.000000    2
+atom      1204    1  CT    "CT_D-Thymine C5'"                6  12.010000    4
+atom      1205   35  H1    "H1_D-Thymine H5'1"               1  1.008000    1
+atom      1206   35  H1    "H1_D-Thymine H5'2"               1  1.008000    1
+atom      1207    1  CT    "CT_D-Thymine C4'"                6  12.010000    4
+atom      1208   35  H1    "H1_D-Thymine H4'"                1  1.008000    1
+atom      1209   23  OS    "OS_D-Thymine O4'"                8  16.000000    2
+atom      1210    1  CT    "CT_D-Thymine C1'"                6  12.010000    4
+atom      1211   36  H2    "H2_D-Thymine H1'"                1  1.008000    1
+atom      1212    1  CT    "CT_D-Thymine C3'"                6  12.010000    4
+atom      1213   35  H1    "H1_D-Thymine H3'"                1  1.008000    1
+atom      1214    1  CT    "CT_D-Thymine C2'"                6  12.010000    4
+atom      1215   34  HC    "HC_D-Thymine H2'1"               1  1.008000    1
+atom      1216   34  HC    "HC_D-Thymine H2'2"               1  1.008000    1
+atom      1217   23  OS    "OS_D-Thymine O3'"                8  16.000000    2
+atom      1218   18  N*    "N*_D-Thymine N1"                 7  14.010000    3
+atom      1219    2  C     "C_D-Thymine C2"                  6  12.010000    3
+atom      1220   15  NA    "NA_D-Thymine N3"                 7  14.010000    3
+atom      1221    2  C     "C_D-Thymine C4"                  6  12.010000    3
+atom      1222    4  CM    "CM_D-Thymine C5"                 6  12.010000    3
+atom      1223    4  CM    "CM_D-Thymine C6"                 6  12.010000    3
+atom      1224   24  O     "O_D-Thymine O2"                  8  16.000000    1
+atom      1225   29  H     "H_D-Thymine H3"                  1  1.008000    1
+atom      1226   24  O     "O_D-Thymine O4"                  8  16.000000    1
+atom      1227    1  CT    "CT_D-Thymine C7"                 6  12.010000    4
+atom      1228   34  HC    "HC_D-Thymine H7"                 1  1.008000    1
+atom      1229   39  H4    "H4_D-Thymine H6"                 1  1.008000    1
+atom      1230   28  P     "P_R-Phosphodiester P"           15  30.970000    4
+atom      1231   25  O2    "O2_R-Phosphodiester OP"          8  16.000000    1
+atom      1232   22  OH    "OH_R-5'-Hydroxyl O5'"            8  16.000000    2
+atom      1233   31  HO    "HO_R-5'-Hydroxyl H5T"            1  1.008000    1
+atom      1234   23  OS    "OS_R-5'-Phosphate O5'"           8  16.000000    2
+atom      1235   28  P     "P_R-5'-Phosphate P"             15  30.970000    4
+atom      1236   25  O2    "O2_R-5'-Phosphate OP"            8  16.000000    1
+atom      1237   22  OH    "OH_R-3'-Hydroxyl O3'"            8  16.000000    2
+atom      1238   31  HO    "HO_R-3'-Hydroxyl H3T"            1  1.008000    1
+atom      1239   23  OS    "OS_R-3'-Phosphate O3'"           8  16.000000    2
+atom      1240   28  P     "P_R-3'-Phosphate P"             15  30.970000    4
+atom      1241   25  O2    "O2_R-3'-Phosphate OP"            8  16.000000    1
+atom      1242   28  P     "P_D-Phosphodiester P"           15  30.970000    4
+atom      1243   25  O2    "O2_D-Phosphodiester OP"          8  16.000000    1
+atom      1244   22  OH    "OH_D-5'-Hydroxyl O5'"            8  16.000000    2
+atom      1245   31  HO    "HO_D-5'-Hydroxyl H5T"            1  1.008000    1
+atom      1246   23  OS    "OS_D-5'-Phosphate O5'"           8  16.000000    2
+atom      1247   28  P     "P_D-5'-Phosphate P"             15  30.970000    4
+atom      1248   25  O2    "O2_D-5'-Phosphate OP"            8  16.000000    1
+atom      1249   22  OH    "OH_D-3'-Hydroxyl O3'"            8  16.000000    2
+atom      1250   31  HO    "HO_D-3'-Hydroxyl H3T"            1  1.008000    1
+atom      1251   23  OS    "OS_D-3'-Phosphate O3'"           8  16.000000    2
+atom      1252   28  P     "P_D-3'-Phosphate P"             15  30.970000    4
+atom      1253   25  O2    "O2_D-3'-Phosphate OP"            8  16.000000    1
+atom      2001   21  OW    "OW_TIP3P Oxygen"                 8  16.000000    2
+atom      2002   30  HW    "HW_TIP3P Hydrogen"               1  1.008000    1
+atom      2003   41  Li+   "Li+ Lithium Ion"                 3  6.940000    0
+atom      2004   42  Na+   "IP_Na+ Sodium Ion"              11  22.990000    0
+atom      2005   43  K+    "K+ Potassium Ion"               19  39.100000    0
+atom      2006   44  Rb+   "Rb+ Rubidium Ion"               37  85.470000    0
+atom      2007   45  Cs+   "Cs+ Cesium Ion"                 55  132.910000    0
+atom      2008   46  Mg+   "MG_Mg+2 Magnesium Ion"          12  24.305000    0
+atom      2009   47  Ca+   "C0_Ca+2 Calcium Ion"            20  40.080000    0
+atom      2010   48  Sr+   "Sr+2 Strontium Ion"             38  87.620000    0
+atom      2011   49  Ba+   "Ba+2 Barium Ion"                56  137.330000    0
+atom      2012   50  Cl-   "Cl- Chloride Ion"               17  35.450000    0
+atom      2020  101  LP    "LFMMspec AT-LP"                  0  0.000000    6
+atom      2021  102  F     "LFMMspec AT-F"                   9  18.998403    6
+atom      2022  103  Du    "LFMMspec AT-Du"                  0  0.000000    6
+atom      2023  104  SX    "LFMMspec AT-SX"                 16  32.066085    2
+atom      2024  105  Cu+2  "LFMMspec AT-Cu+2"               29  63.545640    6
+atom      2025  106  Cu+1  "LFMMspec AT-Cu+1"               29  63.545640    6
+ 
+ 
+      ##################################
+      ##                              ##
+      ##  Bond Stretching Parameters  ##
+      ##                              ##
+      ##################################
+ 
+#               i   j     kb           r0    bt
+bond        1   1   310.00000000     1.52600000
+bond        1  14   337.00000000     1.44900000
+bond        1  18   337.00000000     1.47500000
+bond        1  19   337.00000000     1.46300000
+bond        1  20   367.00000000     1.47100000
+bond        1  22   320.00000000     1.41000000
+bond        1  23   320.00000000     1.41000000
+bond        1  26   227.00000000     1.81000000
+bond        1  27   237.00000000     1.81000000
+bond        1  34   340.00000000     1.09000000
+bond        1  35   340.00000000     1.09000000
+bond        1  36   340.00000000     1.09000000
+bond        1  37   340.00000000     1.09000000
+bond        1  38   340.00000000     1.09000000
+bond        1 102   367.00000000     1.38000000
+bond        1 104   300.00000000     1.81000000
+bond        2   1   317.00000000     1.52200000
+bond        2   3   469.00000000     1.40900000
+bond        2   4   410.00000000     1.44400000
+bond        2   9   447.00000000     1.41900000
+bond        2  14   490.00000000     1.33500000
+bond        2  15   418.00000000     1.38800000
+bond        2  17   457.00000000     1.35800000
+bond        2  18   424.00000000     1.38300000
+bond        2  22   450.00000000     1.36400000
+bond        2  24   570.00000000     1.22900000
+bond        2  25   656.00000000     1.25000000
+bond        3   1   317.00000000     1.51000000
+bond        3   3   469.00000000     1.40000000
+bond        3   4   427.00000000     1.43300000
+bond        3   9   469.00000000     1.40400000
+bond        3  11   469.00000000     1.40000000
+bond        3  15   427.00000000     1.38100000
+bond        3  17   483.00000000     1.33900000
+bond        3  19   481.00000000     1.34000000
+bond        3  33   367.00000000     1.08000000
+bond        3  39   367.00000000     1.08000000
+bond        4   1   317.00000000     1.51000000
+bond        4   4   549.00000000     1.35000000
+bond        4  18   448.00000000     1.36500000
+bond        4  33   367.00000000     1.08000000
+bond        4  39   367.00000000     1.08000000
+bond        4  40   367.00000000     1.08000000
+bond        5   1   317.00000000     1.50400000
+bond        5   6   512.00000000     1.37500000
+bond        5   7   518.00000000     1.37100000
+bond        5  15   422.00000000     1.38500000
+bond        5  16   410.00000000     1.39400000
+bond        5  39   367.00000000     1.08000000
+bond        6  16   410.00000000     1.39400000
+bond        6  39   367.00000000     1.08000000
+bond        7  15   427.00000000     1.38100000
+bond        7  39   367.00000000     1.08000000
+bond        8  15   477.00000000     1.34300000
+bond        8  16   488.00000000     1.33500000
+bond        8  40   367.00000000     1.08000000
+bond        9   9   520.00000000     1.37000000
+bond        9  11   447.00000000     1.41900000
+bond        9  16   414.00000000     1.39100000
+bond        9  17   461.00000000     1.35400000
+bond        9  18   436.00000000     1.37400000
+bond       10   1   317.00000000     1.49500000
+bond       10   7   546.00000000     1.35200000
+bond       10   9   388.00000000     1.45900000
+bond       10  34   367.00000000     1.08000000
+bond       11  15   428.00000000     1.38000000
+bond       12  16   529.00000000     1.30400000
+bond       12  18   440.00000000     1.37100000
+bond       12  40   367.00000000     1.08000000
+bond       13  17   502.00000000     1.32400000
+bond       13  40   367.00000000     1.08000000
+bond       21  30   553.00000000     0.95700000
+bond       22  28   230.00000000     1.61000000
+bond       23  28   230.00000000     1.61000000
+bond       25  28   525.00000000     1.48000000
+bond       26  26   166.00000000     2.03800000
+bond       29  14   434.00000000     1.01000000
+bond       29  15   434.00000000     1.01000000
+bond       29  18   434.00000000     1.01000000
+bond       29  19   434.00000000     1.01000000
+bond       29  20   434.00000000     1.01000000
+bond       30  30   553.00000000     1.51400000
+bond       31  22   553.00000000     0.96000000
+bond       31  23   553.00000000     0.96000000
+bond       32  27   274.00000000     1.33600000
+bond      105  16     0.00000000     2.10000000
+bond      105  21     0.00000000     2.00000000
+bond      105  24     0.00000000     2.00000000
+bond      105  26     0.00000000     2.40000000
+bond      105 104     0.00000000     2.30000000
+bond      106  16     0.00000000     2.10000000
+bond      106  24     0.00000000     2.20000000
+bond      106  26     0.00000000     2.30000000
+bond      106 104     0.00000000     2.30000000
+ 
+ 
+      ################################
+      ##                            ##
+      ##  Angle Bending Parameters  ##
+      ##                            ##
+      ################################
+ 
+#                i   j   k    ka        theta0   at
+angle         1   1   1    40.00000000   109.50000000
+angle         1   1   2    63.00000000   111.10000000
+angle         1   1   3    63.00000000   114.00000000
+angle         1   1   5    63.00000000   113.10000000
+angle         1   1  10    63.00000000   115.60000000
+angle         1   1  14    80.00000000   109.70000000
+angle         1   1  18    50.00000000   109.50000000
+angle         1   1  19    80.00000000   111.20000000
+angle         1   1  20    80.00000000   111.20000000
+angle         1   1  22    50.00000000   109.50000000
+angle         1   1  23    50.00000000   109.50000000
+angle         1   1  26    50.00000000   114.70000000
+angle         1   1  27    50.00000000   108.60000000
+angle         1   1  34    50.00000000   109.50000000
+angle         1   1  35    50.00000000   109.50000000
+angle         1   1  36    50.00000000   109.50000000
+angle         1   1  38    50.00000000   109.50000000
+angle         1   1 104    50.00000000   114.70000000
+angle         2   1  14    63.00000000   110.10000000
+angle         2   1  20    80.00000000   111.20000000
+angle         2   1  34    50.00000000   109.50000000
+angle         2   1  35    50.00000000   109.50000000
+angle         2   1  38    50.00000000   109.50000000
+angle         3   1  34    50.00000000   109.50000000
+angle         4   1  34    50.00000000   109.50000000
+angle         5   1  34    50.00000000   109.50000000
+angle        10   1  34    50.00000000   109.50000000
+angle        14   1  35    50.00000000   109.50000000
+angle        18   1  23    50.00000000   109.50000000
+angle        18   1  35    50.00000000   109.50000000
+angle        18   1  36    50.00000000   109.50000000
+angle        19   1  35    50.00000000   109.50000000
+angle        20   1  38    50.00000000   109.50000000
+angle        22   1  35    50.00000000   109.50000000
+angle        23   1  35    50.00000000   109.50000000
+angle        23   1  36    50.00000000   109.50000000
+angle        26   1  35    50.00000000   109.50000000
+angle        27   1  35    50.00000000   109.50000000
+angle        34   1  34    35.00000000   109.50000000
+angle        35   1  35    35.00000000   109.50000000
+angle        35   1 102    35.00000000   109.50000000
+angle        35   1 104    50.00000000   109.50000000
+angle        36   1  36    35.00000000   109.50000000
+angle        38   1  38    35.00000000   109.50000000
+angle       102   1 102    77.00000000   109.10000000
+angle         1   2  14    70.00000000   116.60000000
+angle         1   2  22    70.00000000   117.00000000
+angle         1   2  24    80.00000000   120.40000000
+angle         1   2  25    70.00000000   117.00000000
+angle         3   2   3    63.00000000   120.00000000
+angle         3   2  22    70.00000000   120.00000000
+angle         4   2  15    70.00000000   114.10000000
+angle         4   2  24    80.00000000   125.30000000
+angle         9   2  15    70.00000000   111.30000000
+angle         9   2  24    80.00000000   128.80000000
+angle        14   2  24    80.00000000   122.90000000
+angle        15   2  18    70.00000000   115.40000000
+angle        15   2  24    80.00000000   120.60000000
+angle        17   2  18    70.00000000   118.60000000
+angle        17   2  24    80.00000000   122.50000000
+angle        18   2  24    80.00000000   120.90000000
+angle        22   2  24    80.00000000   126.00000000
+angle        24   2  24    80.00000000   126.00000000
+angle        25   2  25    80.00000000   126.00000000
+angle         1   3   3    70.00000000   120.00000000
+angle         2   3   3    63.00000000   120.00000000
+angle         2   3  33    35.00000000   120.00000000
+angle         3   3   3    63.00000000   120.00000000
+angle         3   3   9    63.00000000   120.00000000
+angle         3   3  11    63.00000000   120.00000000
+angle         3   3  33    35.00000000   120.00000000
+angle         3   3  39    35.00000000   120.00000000
+angle         4   3  17    70.00000000   121.50000000
+angle         4   3  19    70.00000000   120.10000000
+angle         9   3  17    70.00000000   117.30000000
+angle         9   3  19    70.00000000   123.50000000
+angle         9   3  33    35.00000000   120.00000000
+angle         9   3  39    35.00000000   120.00000000
+angle        11   3  33    35.00000000   120.00000000
+angle        15   3  17    70.00000000   123.30000000
+angle        15   3  19    70.00000000   116.00000000
+angle        17   3  19    70.00000000   119.30000000
+angle        19   3  19    70.00000000   120.00000000
+angle         1   4   2    70.00000000   119.70000000
+angle         1   4   4    70.00000000   119.70000000
+angle         2   4   4    63.00000000   120.70000000
+angle         2   4  33    35.00000000   119.70000000
+angle         2   4  39    35.00000000   119.70000000
+angle         3   4   4    63.00000000   117.00000000
+angle         3   4  33    35.00000000   123.30000000
+angle         3   4  39    35.00000000   123.30000000
+angle         4   4  18    70.00000000   121.20000000
+angle         4   4  33    35.00000000   119.70000000
+angle         4   4  39    35.00000000   119.70000000
+angle        18   4  39    35.00000000   119.10000000
+angle         1   5   6    70.00000000   120.00000000
+angle         1   5   7    70.00000000   120.00000000
+angle         1   5  15    70.00000000   120.00000000
+angle         1   5  16    70.00000000   120.00000000
+angle         6   5  15    70.00000000   120.00000000
+angle         7   5  15    70.00000000   120.00000000
+angle         7   5  16    70.00000000   120.00000000
+angle         7   5  39    35.00000000   120.00000000
+angle        16   5  39    35.00000000   120.00000000
+angle         5   6  16    70.00000000   120.00000000
+angle         5   6  39    35.00000000   120.00000000
+angle        16   6  39    35.00000000   120.00000000
+angle         5   7  15    70.00000000   120.00000000
+angle         5   7  39    35.00000000   120.00000000
+angle        10   7  15    70.00000000   108.70000000
+angle        10   7  39    35.00000000   120.00000000
+angle        15   7  39    35.00000000   120.00000000
+angle        15   8  15    70.00000000   120.00000000
+angle        15   8  16    70.00000000   120.00000000
+angle        15   8  40    35.00000000   120.00000000
+angle        16   8  40    35.00000000   120.00000000
+angle         2   9   9    63.00000000   119.20000000
+angle         2   9  16    70.00000000   130.00000000
+angle         3   9   9    63.00000000   117.30000000
+angle         3   9  10    63.00000000   134.90000000
+angle         3   9  11    63.00000000   116.20000000
+angle         3   9  16    70.00000000   132.40000000
+angle         9   9  16    70.00000000   110.40000000
+angle         9   9  17    70.00000000   127.70000000
+angle         9   9  18    70.00000000   106.20000000
+angle        10   9  11    63.00000000   108.80000000
+angle        17   9  18    70.00000000   126.20000000
+angle         1  10   7    70.00000000   125.00000000
+angle         1  10   9    70.00000000   128.60000000
+angle         7  10   9    63.00000000   106.40000000
+angle         3  11   9    63.00000000   122.70000000
+angle         3  11  15    70.00000000   132.80000000
+angle         9  11  15    70.00000000   104.40000000
+angle        16  12  18    70.00000000   113.90000000
+angle        16  12  40    35.00000000   123.10000000
+angle        18  12  40    35.00000000   123.10000000
+angle        17  13  17    70.00000000   129.10000000
+angle        17  13  40    35.00000000   115.40000000
+angle         1  14   1    50.00000000   118.00000000
+angle         1  14   2    50.00000000   121.90000000
+angle         1  14  29    30.00000000   118.00000000
+angle         2  14  29    30.00000000   120.00000000
+angle        29  14  29    35.00000000   120.00000000
+angle         2  15   2    70.00000000   126.40000000
+angle         2  15   3    70.00000000   125.20000000
+angle         2  15  29    30.00000000   116.80000000
+angle         3  15  29    30.00000000   118.00000000
+angle         5  15   8    70.00000000   120.00000000
+angle         5  15  29    30.00000000   120.00000000
+angle         7  15   8    70.00000000   120.00000000
+angle         7  15  11    70.00000000   111.60000000
+angle         7  15  29    30.00000000   120.00000000
+angle         8  15  29    30.00000000   120.00000000
+angle        11  15  29    30.00000000   123.10000000
+angle         5  16   8    70.00000000   117.00000000
+angle         5  16 105    10.00000000   127.00000000
+angle         5  16 106    10.00000000   127.00000000
+angle         6  16   8    70.00000000   117.00000000
+angle         8  16 105    10.00000000   127.00000000
+angle         8  16 106    10.00000000   127.00000000
+angle         9  16  12    70.00000000   103.80000000
+angle         2  17   3    70.00000000   120.50000000
+angle         3  17   9    70.00000000   112.20000000
+angle         3  17  13    70.00000000   118.60000000
+angle         9  17  13    70.00000000   111.00000000
+angle         1  18   2    70.00000000   117.60000000
+angle         1  18   4    70.00000000   121.20000000
+angle         1  18   9    70.00000000   125.80000000
+angle         1  18  12    70.00000000   128.80000000
+angle         2  18   4    70.00000000   121.60000000
+angle         2  18  29    30.00000000   119.20000000
+angle         4  18  29    30.00000000   121.20000000
+angle         9  18  12    70.00000000   105.40000000
+angle         9  18  29    30.00000000   125.80000000
+angle        12  18  29    30.00000000   128.80000000
+angle         1  19   3    50.00000000   123.20000000
+angle         1  19  29    35.00000000   118.40000000
+angle         3  19  29    35.00000000   120.00000000
+angle        29  19  29    35.00000000   120.00000000
+angle         1  20   1    50.00000000   109.50000000
+angle         1  20  29    50.00000000   109.50000000
+angle        29  20  29    35.00000000   109.50000000
+angle        30  21  30   100.00000000   104.50000000
+angle        30  21 105    10.00000000   126.00000000
+angle         1  22  31    55.00000000   108.50000000
+angle         2  22  31    35.00000000   113.00000000
+angle        28  22  31    45.00000000   108.50000000
+angle         1  23   1    60.00000000   109.50000000
+angle         1  23  28   100.00000000   120.50000000
+angle        28  23  28   100.00000000   120.50000000
+angle         2  24 105    10.00000000   130.00000000
+angle         2  24 106    10.00000000   130.00000000
+angle         1  26   1    62.00000000    98.90000000
+angle         1  26  26    68.00000000   103.70000000
+angle         1  26 105     5.00000000   100.00000000
+angle         1  26 106    10.00000000   130.00000000
+angle         1  27  32    43.00000000    96.00000000
+angle        32  27  32    35.00000000    92.10000000
+angle        22  28  23    45.00000000   102.60000000
+angle        22  28  25    45.00000000   108.20000000
+angle        23  28  23    45.00000000   102.60000000
+angle        23  28  25   100.00000000   108.20000000
+angle        25  28  25   140.00000000   119.90000000
+angle        21  30  30     0.00000000   127.70000000
+angle         1 104 105    20.00000000   105.00000000
+angle         1 104 106    20.00000000    95.00000000
+angle         0 105   0     0.00000000   109.50000000
+angle         0 106   0     0.00000000   109.50000000
+ 
+ 
+      #####################################
+      ##                                 ##
+      ##  Improper Torsional Parameters  ##
+      ##                                 ##
+      #####################################
+ 
+#                atom classes      V1             V2            V3           TT
+imptors       0   0   2  24     0.00000000   0  1    10.50000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors       0   0   3  33     0.00000000   0  1     1.10000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors       0   0   3  39     0.00000000   0  1     1.10000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors       0   0   3  40     0.00000000   0  1     1.10000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors       0   0   4  33     0.00000000   0  1     1.10000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors       0   0   4  39     0.00000000   0  1     1.10000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors       0   0   6  39     0.00000000   0  1     1.10000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors       0   0   7  39     0.00000000   0  1     1.10000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors       0   0   8  40     0.00000000   0  1     1.10000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors       0   0  12  40     0.00000000   0  1     1.10000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors       0   0  13  40     0.00000000   0  1     1.10000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors       0   0  14  29     0.00000000   0  1     1.00000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors       0   0  15  29     0.00000000   0  1     1.00000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors       0   0  19  29     0.00000000   0  1     1.00000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors       0   1  14   1     0.00000000   0  1     0.50000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors       4   2   4   1     0.00000000   0  1     1.10000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors       4   2  18   1     0.00000000   0  1     1.00000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors      22   2   3   3     0.00000000   0  1     1.10000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors      25   2  25   0     0.00000000   0  1     5.25000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors       1   3   3   3     0.00000000   0  1     1.10000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors      19   3   4  17     0.00000000   0  1     1.10000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors      19   3  17   9     0.00000000   0  1     1.10000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors      19   3  17  15     0.00000000   0  1     1.10000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors      19   3  19   0     0.00000000   0  1     3.50000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors       1   4   4   2     0.00000000   0  1     1.10000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors       1   5   6  15     0.00000000   0  1     1.10000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors       1   5   7  15     0.00000000   0  1     1.10000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors       1   5   7  16     0.00000000   0  1     1.10000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors       7   9  10   1     0.00000000   0  1     1.10000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+imptors      12   9  18   1     0.00000000   0  1     1.00000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+ 
+ 
+      ###################################
+      ##                               ##
+      ##  Proper Torsional Parameters  ##
+      ##                               ##
+      ###################################
+ 
+#                atom classes      V1             V2            V3           TT
+torsion       0   1   1   0     0.00000000   0  1     0.00000000   0  2     0.15555556   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   1   2   0     0.00000000   0  1     0.00000000   0  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   1   3   0     0.00000000   0  1     0.00000000   0  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   1   4   0     0.00000000   0  1     0.00000000   0  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   1   5   0     0.00000000   0  1     0.00000000   0  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   1  10   0     0.00000000   0  1     0.00000000   0  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   1  14   0     0.00000000   0  1     0.00000000   0  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   1  18   0     0.00000000   0  1     0.00000000   0  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   1  19   0     0.00000000   0  1     0.00000000   0  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   1  20   0     0.00000000   0  1     0.00000000   0  2     0.15555556   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   1  22   0     0.00000000   0  1     0.00000000   0  2     0.16666667   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   1  23   0     0.00000000   0  1     0.00000000   0  2     0.38333333   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   1  26   0     0.00000000   0  1     0.00000000   0  2     0.33333333   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   1  27   0     0.00000000   0  1     0.00000000   0  2     0.25000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   1 104   0     0.00000000   0  1     0.00000000   0  2     0.33333333   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       1   1   2  14     0.00000000   0  1     0.07000000   0  2     0.00000000   0  3     0.10000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       1   1  14   2     0.53000000   0  1     0.00000000   0  2     0.15000000 180  3     0.50000000 180  4     0.00000000   0  5     0.00000000   0  6 
+torsion       1   1  23   1     0.00000000   0  1     0.10000000 180  2     0.38300000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       2   1  14   2     0.00000000   0  1     0.20000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion      14   1   2  14     0.75000000 180  1     1.35000000 180  2     0.00000000   0  3     0.40000000 180  4     0.00000000   0  5     0.00000000   0  6 
+torsion      22   1   1  22     0.00000000   0  1     1.00000000   0  2     0.14400000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion      22   1   1  23     0.00000000   0  1     1.00000000   0  2     0.14400000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion      23   1   1  23     0.00000000   0  1     1.00000000   0  2     0.14400000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion      23   1  18   4     2.50000000   0  1     0.50000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion      23   1  18  12     2.50000000   0  1     0.50000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   2   3   0     0.00000000   0  1     3.62500000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   2   4   0     0.00000000   0  1     2.17500000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   2   9   0     0.00000000   0  1     3.12500000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   2  14   0     0.00000000   0  1     2.50000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   2  15   0     0.00000000   0  1     1.35000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   2  17   0     0.00000000   0  1     4.00000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   2  18   0     0.00000000   0  1     1.45000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   2  22   0     0.00000000   0  1     0.90000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   2  24 105     0.00000000   0  1     0.20000000   0  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   2  24 106     0.00000000   0  1     0.20000000   0  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion      24   2  14  29     2.00000000   0  1     2.50000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   3   3   0     0.00000000   0  1     3.62500000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   3   4   0     0.00000000   0  1     2.55000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   3   9   0     0.00000000   0  1     3.50000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   3  11   0     0.00000000   0  1     3.62500000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   3  15   0     0.00000000   0  1     1.50000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   3  17   0     0.00000000   0  1     4.80000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   3  19   0     0.00000000   0  1     2.40000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   4   4   0     0.00000000   0  1     6.65000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   4  18   0     0.00000000   0  1     1.85000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   5   6   0     0.00000000   0  1     5.15000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   5   7   0     0.00000000   0  1     5.37500000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   5  15   0     0.00000000   0  1     1.40000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   5  16   0     0.00000000   0  1     2.40000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   6  16   0     0.00000000   0  1     2.40000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   7  10   0     0.00000000   0  1     6.52500000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   7  15   0     0.00000000   0  1     1.15000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   8  15   0     0.00000000   0  1     2.32500000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   8  16   0     0.00000000   0  1     5.00000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   9   9   0     0.00000000   0  1     5.45000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   9  10   0     0.00000000   0  1     1.67500000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   9  11   0     0.00000000   0  1     3.00000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   9  16   0     0.00000000   0  1     2.55000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   9  17   0     0.00000000   0  1     4.15000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0   9  18   0     0.00000000   0  1     1.65000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0  11  15   0     0.00000000   0  1     1.52500000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0  12  16   0     0.00000000   0  1    10.00000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0  12  18   0     0.00000000   0  1     1.70000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0  13  17   0     0.00000000   0  1     6.80000000 180  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0  16 105   0     0.00000000   0  1     0.00000000   0  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0  16 106   0     0.00000000   0  1     0.00000000   0  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0  21 105   0     0.00000000   0  1     0.00000000   0  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0  22  28   0     0.00000000   0  1     0.00000000   0  2     0.25000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0  23  28   0     0.00000000   0  1     0.00000000   0  2     0.25000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       1  23  28  22     0.00000000   0  1     1.20000000   0  2     0.25000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       1  23  28  23     0.00000000   0  1     1.20000000   0  2     0.25000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0  24 105   0     0.00000000   0  1     0.00000000   0  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0  24 106   0     0.00000000   0  1     0.00000000   0  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0  26 105   0     0.00000000   0  1     0.00000000   0  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0  26 106   0     0.00000000   0  1     0.00000000   0  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       1  26  26   1     0.00000000   0  1     3.50000000   0  2     0.60000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0 104 105   0     0.00000000   0  1     0.00000000   0  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0 104 106   0     0.00000000   0  1     0.00000000   0  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+torsion       0 302 203   0     0.00000000   0  1     0.00000000   0  2     0.00000000   0  3     0.00000000   0  4     0.00000000   0  5     0.00000000   0  6 
+ 
+ 
+      ################################
+      ##                            ##
+      ##  Van der Waals Parameters  ##
+      ##                            ##
+      ################################
+ 
+ 
+#          class       r        eps
+vdw           1       1.908000  0.109400
+vdw           2       1.908000  0.086000
+vdw           3       1.908000  0.086000
+vdw           4       1.908000  0.086000
+vdw           5       1.908000  0.086000
+vdw           6       1.908000  0.086000
+vdw           7       1.908000  0.086000
+vdw           8       1.908000  0.086000
+vdw           9       1.908000  0.086000
+vdw          10       1.908000  0.086000
+vdw          11       1.908000  0.086000
+vdw          12       1.908000  0.086000
+vdw          13       1.908000  0.086000
+vdw          14       1.824000  0.170000
+vdw          15       1.824000  0.170000
+vdw          16       1.824000  0.170000
+vdw          17       1.824000  0.170000
+vdw          18       1.824000  0.170000
+vdw          19       1.824000  0.170000
+vdw          20       1.875000  0.170000
+vdw          21       1.768300  0.152000
+vdw          22       1.721000  0.210400
+vdw          23       1.683700  0.170000
+vdw          24       1.661200  0.210000
+vdw          25       1.661200  0.210000
+vdw          26       2.000000  0.250000
+vdw          27       2.000000  0.250000
+vdw          28       2.100000  0.200000
+vdw          29       0.600000  0.015700
+vdw          30       0.000000  0.000000
+vdw          31       0.000000  0.000000
+vdw          32       0.600000  0.015700
+vdw          33       1.459000  0.015000
+vdw          34       1.487000  0.015700
+vdw          35       1.387000  0.015700
+vdw          36       1.287000  0.015700
+vdw          37       1.187000  0.015700
+vdw          38       1.100000  0.015700
+vdw          39       1.409000  0.015000
+vdw          40       1.359000  0.015000
+vdw          42       1.868000  0.002770
+vdw          46       1.170000  0.100000
+vdw          47       1.600000  0.100000
+vdw         101       1.200000  0.016000
+vdw         102       1.750000  0.061000
+vdw         103       0.500000  0.000000
+vdw         104       2.000000  0.250000
+vdw         105       1.600000  0.100000
+vdw         106       1.600000  0.100000
+ 
+ 
+      ###############################
+      ##                           ##
+      ##  Ligand-Ligand Repulsion  ##
+      ##                           ##
+      ###############################
+ 
+#               M   L       A         n
+lfmmllrep     105  16   2500.0        6
+lfmmllrep     105  21   2000.0        6
+lfmmllrep     105  24   2000.0        6
+lfmmllrep     105  26    900.0        4
+lfmmllrep     105 104   3500.0        4
+ 
+ 
+      ###############################################
+      ##                                           ##
+      ##  Lennard-Jones Ligand-Ligand interaction  ##
+      ##                                           ##
+      ###############################################
+ 
+#                M   L     K1       K2       K3
+ 
+ 
+      #################################
+      ##                             ##
+      ##  Metal-Ligand bond (Morse)  ##
+      ##                             ##
+      #################################
+ 
+#                M   L     r0       k1       k2
+lfmmmorse      105  16     2.05000000    60.00000000     1.20000000
+lfmmmorse      105  21     1.95000000    57.40000000     0.50000000
+lfmmmorse      105  24     1.95000000    57.40000000     0.50000000
+lfmmmorse      105  26     2.05000000    50.00000000     0.65000000
+lfmmmorse      105 104     2.10000000    70.00000000     1.30000000
+ 
+ 
+      ####################################
+      ##                                ##
+      ##  Metal-Ligand bond (Harmonic)  ##
+      ##                                ##
+      ####################################
+ 
+#             M   L     r0       k
+ 
+ 
+      #############################
+      ##                         ##
+      ##  Angular Overlap Model  ##
+      ##                         ##
+      #############################
+ 
+#          M   L      esig0      esig1      esig2      esig3      esig4      esig5      esig6
+lfmmesig 105  16     0.00000000     0.00000000     0.00000000     0.00000000 106500.00000000     0.00000000     0.00000000
+lfmmesig 105  21     0.00000000     0.00000000     0.00000000 20000.00000000     0.00000000     0.00000000     0.00000000
+lfmmesig 105  24     0.00000000     0.00000000     0.00000000 20000.00000000     0.00000000     0.00000000     0.00000000
+lfmmesig 105  26     0.00000000     0.00000000     0.00000000 42000.00000000     0.00000000     0.00000000     0.00000000
+lfmmesig 105 104     0.00000000     0.00000000     0.00000000 57700.00000000     0.00000000     0.00000000     0.00000000
+ 
+#         M      L      epix0        epix1        epix2        epix3        epix4        epix5        epix6
+lfmmepix 105  16     0.00000000     0.00000000     0.00000000     0.00000000     0.00000000     0.00000000     0.00000000
+lfmmepix 105  21     0.00000000     0.00000000     0.00000000     0.00000000     0.00000000     0.00000000     0.00000000
+lfmmepix 105  24     0.00000000     0.00000000     0.00000000  3000.00000000     0.00000000     0.00000000     0.00000000
+lfmmepix 105  26     0.00000000     0.00000000     0.00000000     0.00000000     0.00000000     0.00000000     0.00000000
+lfmmepix 105 104     0.00000000     0.00000000     0.00000000     0.00000000     0.00000000 95000.00000000     0.00000000
+ 
+#         M      L      epiy0        epiy1        epiy2        epiy3        epiy4        epiy5        epiy6
+lfmmepiy 105  16     0.00000000     0.00000000     0.00000000     0.00000000 20000.00000000     0.00000000     0.00000000
+lfmmepiy 105  21     0.00000000     0.00000000     0.00000000  3000.00000000     0.00000000     0.00000000     0.00000000
+lfmmepiy 105  24     0.00000000     0.00000000     0.00000000  3000.00000000     0.00000000     0.00000000     0.00000000
+lfmmepiy 105  26     0.00000000     0.00000000     0.00000000     0.00000000     0.00000000 89000.00000000     0.00000000
+lfmmepiy 105 104     0.00000000     0.00000000     0.00000000     0.00000000     0.00000000 95000.00000000     0.00000000
+ 
+#         M      L      exds0        exds1        exds2        exds3        exds4        exds5        exds6
+lfmmexds 105  16     0.00000000     0.00000000     0.00000000     0.00000000     0.00000000     0.00000000 72800.00000000
+lfmmexds 105  21     0.00000000     0.00000000     0.00000000     0.00000000     0.00000000     0.00000000 77500.00000000
+lfmmexds 105  24     0.00000000     0.00000000     0.00000000     0.00000000     0.00000000     0.00000000 77500.00000000
+lfmmexds 105  26     0.00000000     0.00000000     0.00000000     0.00000000     0.00000000     0.00000000 251000.00000000
+lfmmexds 105 104     0.00000000     0.00000000     0.00000000     0.00000000     0.00000000     0.00000000 300000.00000000
+ 
+#          M   L        P0           P1           P2           P3           P4           P5           P6
+ 

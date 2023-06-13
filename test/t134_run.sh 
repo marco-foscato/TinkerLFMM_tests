@@ -1,0 +1,49 @@
+#\!/bin/sh
+# Test for TinkerLFMM: Test 134
+ 
+rm -f lfse.in
+echo " Test 134: Geometry Optimization" 
+cp input/t134.xyz input/t134.key input/t134_optDM.xyz .
+$TINKERLFMMBIN/minimize t134.xyz 0.01  > t134.log
+if [ ! -f t134.log ]
+then
+    echo ERROR! No output produced
+    exit 1
+else 
+    grep -q "Normal Termination" t134.log
+    if [ $? != 0 ]
+    then
+        echo ERROR! Tinker-minimize did not terminate normally
+        exit 2
+    fi
+fi
+mv t134.xyz_2 t134_optTnk.xyz
+cp t134.key t134_optTnk.key
+$TINKERLFMMBIN/analyze t134_optTnk.xyz es >> t134.log
+if [ ! -f t134.log ]
+then
+    echo ERROR! No output produced
+    exit 1
+else 
+    grep -q "Normal Termination" t134.log
+    if [ $? != 0 ]
+    then
+        echo ERROR! Tinker-analyze did not terminate normally
+        exit 2
+    fi
+fi
+# Compare energy opt 
+result=$(./compareEnergyTerms_relative.sh t134 t134.log results_DommiMOE2011/t134_DommiMOE-OPT.log)
+echo 134 $result >> results_TinkerLFMM/diffEnergy_opt_relative.dat  
+result=$(\.\/compareEnergyTerms\.sh t134 t134.log results_DommiMOE2011/t134_DommiMOE-OPT.log)
+echo 134 $result >> results_TinkerLFMM/diffEnergy_opt.dat
+ 
+# Compare optimized geometries  
+$TINKERLFMMBIN/superpose t134_optDM.xyz t134_optTnk.key t134_optTnk.xyz 1 y u n 0.0 >> t134.log
+result=$(grep "Root Mean Square Distance" t134.log -m1 | awk {'print $6'})
+echo 134 t134 $result >> results_TinkerLFMM/diffGeometries_opt.dat
+ 
+# Cleanup 
+mv t134.log t134_optTnk.xyz results_TinkerLFMM/
+rm t134.xyz t134_optTnk.key t134.key t134_optDM.xyz 
+echo " Test 134: completed" 

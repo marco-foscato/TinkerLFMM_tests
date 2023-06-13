@@ -1,0 +1,38 @@
+#\!/bin/sh
+# Test for TinkerLFMM: Test 71
+ 
+rm -f lfse.in
+echo " Test 71: Single Point LFMM " 
+cp input/t71.xyz input/t71.key .
+"$TINKERLFMMBIN"/analyze t71.xyz et > t71.log
+if [ ! -f t71.log ]
+then
+    echo ERROR! No output produced
+    exit 1
+else 
+    grep -q "Normal Termination" t71.log
+    if [ $? != 0 ]
+    then
+        echo ERROR! Tinker did not terminate normally
+        exit 2
+    fi
+fi
+#grep -q "0" t71.log
+#if [ $? != 0 ] ; then
+#echo ERROR! Check err-3
+#exit 3
+#fi
+# Compare energy terms
+result=$(./compareEnergyTerms_relative.sh t71 t71.log results_DommiMOE2011/t71_DommiMOE-SP.log)
+echo 71 $result >> results_TinkerLFMM/diffEnergyTerms_relative.dat 
+result=$(./compareEnergyGradient_relative.sh t71 t71.log results_DommiMOE2011/t71_DommiMOE-SP.log)
+echo 71 $result >> results_TinkerLFMM/diffEnergyGradient_relative.dat  
+result=$(\.\/compareEnergyTerms\.sh t71 t71.log results_DommiMOE2011/t71_DommiMOE-SP.log)
+echo 71 $result >> results_TinkerLFMM/diffEnergyTerms.dat
+result=$(\.\/compareEnergyGradient\.sh t71 t71.log results_DommiMOE2011/t71_DommiMOE-SP.log)
+echo 71 $result >> results_TinkerLFMM/diffEnergyGradient.dat
+result=$(\.\/compareGradDecomposition\.sh t71 t71.log results_DommiMOE2011/t71_DommiMOE-SP.log)
+echo 71 $result >> results_TinkerLFMM/diffGradComponents.dat
+ 
+mv t71.* results_TinkerLFMM/
+echo " Test 71: completed" 
