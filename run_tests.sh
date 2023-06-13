@@ -10,14 +10,6 @@
 
 export TINKERLFMMBIN="/Users/marcof/tools/tinker_end_of_6.3/bin"
 
-if [ ! -f "$TINKERLFMMBIN/analyze" ]; then
-  echo " "
-  echo "ERROR: Could not find TinkerLFMM executables"
-  echo "Did you configure TINKERLFMMBIN?"
-  echo " "
-  exit -1
-fi
-
 ###################### Setting you usually do not change ##############
 locdir=`pwd`
 testdir=$locdir/test
@@ -38,6 +30,15 @@ optGeomDiff_3=$testdir/results_TinkerLFMM/diffGeometries_optOptimize.dat
 
 #######################################################################
 #######################################################################
+
+
+if [ ! -f "$TINKERLFMMBIN/analyze" ]; then
+  echo " "
+  echo "ERROR: Could not find TinkerLFMM executables"
+  echo "Did you configure TINKERLFMMBIN?"
+  echo " "
+  exit -1
+fi
 
 echo "###########################################################"
 echo "#                    Testing TinkerLFMM                   #"
