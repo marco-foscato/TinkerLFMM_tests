@@ -1,5 +1,5 @@
 # Tests for TinkerLFMM
-This repository contains tests that allow to verify the correct behaviour of the Tinker/LFMM integration (see __TODO_add_link__).
+This repository contains tests that allow to verify the correct behaviour of the Tinker/LFMM integration (see [TinkerLFMM repository](https://github.com/marco-foscato/tinker)).
 
 ## Usage
 1. Clone/Download the repository.
