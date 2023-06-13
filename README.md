@@ -24,3 +24,7 @@ gnuplot -persis plotNrgDiff_relative_contribs.gnu
 ```
 
 If you do not have `gnuplot`, you can still look or plot the results that are stored in the `test/results_TinkerLFMM/*.dat` files.
+
+## License
+All material is distributes under the AGPL-v3 license.
+
